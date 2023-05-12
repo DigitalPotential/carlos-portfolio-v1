@@ -1,8 +1,8 @@
 import './globals.css'
 import { Unbounded, Montserrat } from 'next/font/google'
 
-const unbounded = Unbounded({ subsets: ['latin'] })
-const montserrat = Montserrat({ subsets: ['latin'] })
+// const unbounded = Unbounded({ subsets: ['latin'] })
+// const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Carlos Portfolio',
@@ -16,7 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={unbounded.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
+// className={unbounded.className}
