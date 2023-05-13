@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -24,21 +24,24 @@ const Navbar = () => {
                             className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         >
                             <motion.li
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.1 }}
-                            >Home</motion.li>
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.1 }}
+                            >
+                                Home
+                            </motion.li>
                         </Link>
                         <Link
                             href="#projects"
                             className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         >
                             <motion.li
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.1, delay: 0.1 }}
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.1, delay: 0.1 }}
                             >
-                                <span className="text-textGreen">01.</span> Projects
+                                <span className="text-textGreen">01.</span>{" "}
+                                Projects
                             </motion.li>
                         </Link>
                         <Link
@@ -46,11 +49,12 @@ const Navbar = () => {
                             className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         >
                             <motion.li
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.1, delay: 0.2 }}
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.1, delay: 0.2 }}
                             >
-                                <span className="text-textGreen">02.</span> About
+                                <span className="text-textGreen">02.</span>{" "}
+                                About
                             </motion.li>
                         </Link>
                         <Link
@@ -58,11 +62,12 @@ const Navbar = () => {
                             className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         >
                             <motion.li
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.1, delay: 0.3 }}
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.1, delay: 0.3 }}
                             >
-                                <span className="text-textGreen">03.</span> Experience
+                                <span className="text-textGreen">03.</span>{" "}
+                                Experience
                             </motion.li>
                         </Link>
                         <Link
@@ -70,14 +75,23 @@ const Navbar = () => {
                             className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         >
                             <motion.li
-                            initial={{ y: -10, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.1, delay: 0.4 }}
+                                initial={{ y: -10, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: 0.1, delay: 0.4 }}
                             >
-                                <span className="text-textGreen">04.</span> Contact
+                                <span className="text-textGreen">04.</span>{" "}
+                                Contact
                             </motion.li>
                         </Link>
                     </ul>
+                    <motion.button
+                        initial={{ y: -10, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.1, delay: 0.5 }}
+                        className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+                    >
+                        Resume
+                    </motion.button>
                 </div>
             </div>
         </div>
