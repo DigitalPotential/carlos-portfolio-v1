@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { logo } from "@/public/assets";
+import Link from "next/link";
 
 const Navbar = () => {
     return (
@@ -9,7 +10,16 @@ const Navbar = () => {
                 <div>
                     <Image className="w-14" src={logo} alt="logo" />
                 </div>
-                <div></div>
+                <div>
+                    <ul>
+                        <Link
+                            href="#home"
+                            className="flex items-center gap-1 font-medium text-textdark hover:text-textGreen cursor-pointer duration-300 nav-link"
+                        >
+                            <li>Home</li>
+                        </Link>
+                    </ul>
+                </div>
             </div>
         </div>
     );
