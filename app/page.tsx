@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import LeftSide from "@/components/LeftSide";
+import RightSide from "@/components/RightSide";
 
 export default function Home() {
     return (
@@ -12,7 +13,9 @@ export default function Home() {
                     <LeftSide />
                 </div>
                 <div></div>
-                <div></div>
+                <div>
+                    <RightSide />
+                </div>
             </div>
         </main>
     );
