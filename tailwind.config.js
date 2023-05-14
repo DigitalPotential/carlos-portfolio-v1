@@ -11,11 +11,7 @@ module.exports = {
                 xs: "475px",
                 sm: "640px",
                 sml: "768px",
-                md: "1024px",
-                mdl: "1280px",
-                lg: "1440px",
-                lgl: "1536px",
-                xl: "1920px",
+                xl: "1024px",
             },
             fontFamily: {
                 unbounded: ["Unbounded", "cursive"],
