@@ -6,12 +6,20 @@ module.exports = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
+        maxWidth: {
+            container: "1440px",
+            contentContainer: "1140px",
+            containerSmall: "1024px",
+            containerxs: "768px",
+        },
         extend: {
             screens: {
                 xs: "475px",
                 sm: "640px",
-                sml: "768px",
-                xl: "1024px",
+                md: "667px",
+                mdl: "768px",
+                lgl: "1024px",
+                xl: "1280px",
             },
             fontFamily: {
                 unbounded: ["Unbounded", "cursive"],
@@ -36,3 +44,13 @@ module.exports = {
         plugins: [],
     },
 };
+
+
+// xs: "320px",
+// sm: "375px",
+// sml: "500px",
+// md: "667px",
+// mdl: "768px",
+// lg: "960px",
+// lgl: "1024px",
+// xl: "1280px",
