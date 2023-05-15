@@ -22,6 +22,12 @@ export default function Home() {
                 </motion.div>
                 <div className="h-[88vh] w-full mx-auto lg:flex items-center gap-20 justify-between">
                    <Banner />
+                   {/* About */}
+                   {/* Experience */}
+                   {/* Projects */}
+                   {/* Archive */}
+                   {/* Contact */}
+                   {/* Footer */}
                 </div>
                 <motion.div
                 initial={{ opacity: 0 }}
