@@ -5,7 +5,7 @@ import LeftSide from "@/components/LeftSide";
 import RightSide from "@/components/RightSide";
 import { motion } from 'framer-motion'
 import Banner from "@/components/Banner";
-import { use } from "react";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -20,9 +20,9 @@ export default function Home() {
                 className="hidden lg:inline-flex w-32 h-full fixed left-0 bottom-0">
                     <LeftSide />
                 </motion.div>
-                <div className="h-[88vh] w-full mx-auto lg:flex items-center gap-20 justify-between">
+                <div className="h-[88vh] w-full mx-auto p-4">
                    <Banner />
-                   {/* About */}
+                   <About />
                    {/* Experience */}
                    {/* Projects */}
                    {/* Archive */}
