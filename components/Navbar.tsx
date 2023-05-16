@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 const Navbar = () => {
     return (
         <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] bg-bodyColor sticky top-0 z-50 px-4">
-            <div className="max-w-container font-titleFont mx-auto py-1 flex justify-between items-center h-full">
+            <div className="max-w-container font-unbounded mx-auto py-1 flex justify-between items-center h-full">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

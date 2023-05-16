@@ -11,7 +11,7 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="text-lg font-titleFont tracking-wide text-textGreen"
+                className="text-lg font-unbounded tracking-wide text-textGreen"
             >
                 Hi, my name is
             </motion.h3>
@@ -19,7 +19,7 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
-                className="text-4xl lgl:text-6xl font-titleFont font-semibold text-white flex flex-col"
+                className="text-4xl lgl:text-6xl font-unbounded font-semibold text-white flex flex-col"
             >
                 Carlos.{" "}
                 <span className="text-textDark mt-2 lgl:mt-4">
@@ -48,7 +48,7 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.9 }}
-                className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+                className="w-52 h-14 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
             >
                 Check out my Projects!
             </motion.button>
