@@ -30,7 +30,7 @@ const Banner = () => {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="text-base md:max-w-[650px] text-textDark font-medium"
+                className="text-base flex flex-col md:max-w-[650px] text-textDark font-medium"
             >
                 I am a web developer based in Stockholm, Sweden specializing in
                 the Mern stack. I enjoy creating things that live on the
