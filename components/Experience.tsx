@@ -1,5 +1,7 @@
 import React from 'react'
 import SectionTitle from './SectionTitle'
+import DigitalPotential from './Experience/DigitalPotential'
+import ScanrecoGroup from './Experience/ScanrecoGroup'
 
 const Experience = () => {
   return (
@@ -14,6 +16,7 @@ const Experience = () => {
                     Scanreco Group
                 </li>
             </ul>
+            <DigitalPotential />
         </div>
     </section>
   )
