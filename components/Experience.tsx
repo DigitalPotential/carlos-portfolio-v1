@@ -1,12 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import DigitalPotential from "./Experience/DigitalPotential";
 import ScanrecoGroup from "./Experience/ScanrecoGroup";
 
 const Experience = () => {
-    const [workDigitalPotential, setWorkDigitalPotential] =
-        React.useState(true);
-    const [workScanrecoGroup, setWorkScanrecoGroup] = React.useState(false);
+    const [workDigitalPotential, setWorkDigitalPotential] = useState(true);
+    const [workScanrecoGroup, setWorkScanrecoGroup] = useState(false);
 
     const handleDigital = () => {
         setWorkDigitalPotential(true);
@@ -25,16 +24,24 @@ const Experience = () => {
         >
             <SectionTitle title="Where I have worked" titleNo="02" />
             <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-                <ul className="md:w-32 flex flex-col">
+                <ul className="md:w-32 flex flex-col text-white">
                     <li
                         onClick={handleDigital}
-                        className="border-l-2 border-l-textGreen text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                        className={`${
+                            workDigitalPotential
+                                ? "border-l-textGreen border-l-2 text-textGreen"
+                                : "border-l-hoverColor text-textDark"
+                        }border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
                     >
                         Digital Potential International
                     </li>
                     <li
                         onClick={handleScanreco}
-                        className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                        className={`${
+                            workScanrecoGroup
+                                ? "border-l-textGreen border-l-2 text-textGreen"
+                                : "border-l-hoverColor text-textDark"
+                        }border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`}
                     >
                         Scanreco Group
                     </li>
