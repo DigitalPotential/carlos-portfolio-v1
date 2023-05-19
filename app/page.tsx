@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import Banner from "@/components/Banner";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
 
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
                    <Banner />
                    <About />
                    <Experience />
-                   {/* Projects */}
+                   <Projects />
                    {/* Archive */}
                    {/* Contact */}
                    {/* Footer */}
