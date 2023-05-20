@@ -26,8 +26,13 @@ const Projects = () => {
                             />
                         </div>
                     </a>
+                <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
+                    <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                        Featured Project
+                    </p>
+                    <h3 className="text-2xl font-bold">Password Generator</h3>
                 </div>
-                <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10"></div>
+                </div>
             </div>
             {/* project 2 */}
             {/* project 3 */}
