@@ -1,4 +1,4 @@
-const daisyui = require('daisyui');
+const daisyui = require("daisyui");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -43,10 +43,12 @@ module.exports = {
                 hoverColor: "rgba(100,255,218,0.1)",
             },
         },
-        plugins: [require('daisyui')],
+        plugins: [
+            require("daisyui"),
+            
+        ],
     },
 };
-
 
 // xs: "320px",
 // sm: "375px",

@@ -11,9 +11,10 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
 
+
 export default function Home() {
     return (
-        <main className="w-full h-screen font-montserrat bg-bodyColor text-textLight overflow-x-hidden overflow-y-scroll">
+        <main className="scrollGradient w-full h-screen font-montserrat text-textLight overflow-x-hidden overflow-y-scroll">
             <Navbar />
             <div className="w-full h-[88vh] lg:flex items-center gap-20 justify-between">
                 <motion.div
