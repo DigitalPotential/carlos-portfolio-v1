@@ -9,6 +9,10 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Testimonials from "@/components/Testimonials";
+// import ContactMap from "@/components/ContactMap";
+// import Map from "@/components/Map";
+import Skills from "@/components/Skills";
 
 
 
@@ -27,9 +31,12 @@ export default function Home() {
                 <div className="h-[88vh] w-full mx-auto p-4">
                    <Banner />
                    <About />
+                   <Skills />
                    <Experience />
                    <Projects />
+                   <Testimonials />
                    <Contact />
+                   {/* <ContactMap /> */}
                    {/* Footer */}
                 </div>
                 <motion.div

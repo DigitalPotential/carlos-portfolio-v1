@@ -31,6 +31,7 @@ module.exports = {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+                    "circleLight": "repeating-radial-gradient(#64FFDA 2px, #0A192F 5px, #0A192F 100px);"
             },
             boxShadow: {
                 navbarShadow: "0 10px 30px -10px rgba(2, 12, 27, 0.7)",
