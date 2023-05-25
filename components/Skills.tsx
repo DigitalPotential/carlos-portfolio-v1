@@ -3,17 +3,18 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { skillsCircle } from "@/public/assets";
+import { ImageProps } from 'next/image';
 
 interface SkillProps {
     name: string;
     x: string;
     y: string;
-  }
-  
+    imageSrc: ImageProps['src']; // Add the image source prop
+}
 
-const Skill: React.FC<SkillProps> = ({ name, x, y }) => {
+const Skill: React.FC<SkillProps> = ({ name, imageSrc , x, y }) => {
     const { ref, inView } = useInView({
-       threshold: 0,
+        threshold: 0,
     });
 
     return (
@@ -25,7 +26,7 @@ const Skill: React.FC<SkillProps> = ({ name, x, y }) => {
             animate={{ x: inView ? x : 0, y: inView ? y : 0 }}
             transition={{ duration: 1.2 }}
         >
-            {name}
+            <Image src={imageSrc} alt={name} width={50} height={50} />
         </motion.div>
     );
 };
@@ -36,16 +37,17 @@ const Skills = () => {
             <h2 className="font-unbounded text-white font-bold text-5xl mt-32 w-full text-center">
                 Skills
             </h2>
-            <div
-                className="w-full h-screen mt-14 relative flex items-center justify-center rounded-full"
-                >
-                    <Image src={skillsCircle} alt="skillsCircle" className="w-full h-screen items-center justify-center absolute"/>
-                
+            <div className="w-full h-screen mt-14 relative flex items-center justify-center rounded-full">
+                <Image
+                    src={skillsCircle}
+                    alt="skillsCircle"
+                    className="w-full h-screen items-center justify-center absolute"
+                />
+
                 <motion.div className="flex items-center justify-center rounded-full font-semibold bg-textGreen text-textDark py-3 px-6 shadow-black cursor-pointer">
                     Web
-                    
                 </motion.div>
-                <Skill name="CSS" x="-20vw" y="2vw" />
+                <Skill imageSrc="/path/to/css-image.jpg" name="css" x="-20vw" y="2vw" />
                 <Skill name="Javascript" x="-5vw" y="-10vw" />
                 <Skill name="React" x="20vw" y="6vw" />
                 <Skill name="Typescript" x="0vw" y="12vw" />
