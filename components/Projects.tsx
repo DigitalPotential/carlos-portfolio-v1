@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-import { password } from "@/public/assets";
+import { password, restCountriesApi } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -83,8 +83,8 @@ const Projects = () => {
                             <div>
                                 <Image
                                     className="w-full h-full object-contain"
-                                    src={password}
-                                    alt="Password Generator"
+                                    src={restCountriesApi}
+                                    alt="Rest Countries API"
                                 />
                             </div>
                         </a>
@@ -103,6 +103,8 @@ const Projects = () => {
                                 <li>Typescript</li>
                                 <li>Tailwind CSS</li>
                                 <li>Countries API</li>
+                                <li>React Router</li>
+                                <li>Framer Motion</li>
                                 <li>Vite</li>
                             </ul>
                             <div className="text-white text-2xl flex gap-4">
