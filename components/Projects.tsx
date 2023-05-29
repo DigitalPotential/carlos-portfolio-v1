@@ -58,7 +58,7 @@ const Projects = () => {
                             <div className="text-white text-2xl flex gap-4">
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://github.com/DigitalPotential/password-generator"
+                                    href="https://github.com/DigitalPotential/Spotify-Clone-React-Typescript-API"
                                 >
                                     <TbBrandGithub />
                                 </a>
@@ -108,7 +108,7 @@ const Projects = () => {
                             <div className="text-white text-2xl flex gap-4">
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://github.com/DigitalPotential/password-generator"
+                                    href="https://github.com/DigitalPotential/REST-Countries-API-Typescript"
                                 >
                                     <TbBrandGithub />
                                 </a>

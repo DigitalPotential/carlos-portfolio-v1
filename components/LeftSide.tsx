@@ -12,12 +12,12 @@ const LeftSide = () => {
                         <TbBrandGithub />
                     </span>
                 </a>
-                <a href="https://github.com/DigitalPotential" target="_blank">
+                <a href="https://www.linkedin.com/in/carlos-digital-potential/" target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300 ">
                         <SlSocialLinkedin />
                     </span>
                 </a>
-                <a href="https://github.com/DigitalPotential" target="_blank">
+                <a href="mailto:carlos@digitalpotential.se" target="_blank">
                     <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300 ">
                         <TfiEmail />
                     </span>
