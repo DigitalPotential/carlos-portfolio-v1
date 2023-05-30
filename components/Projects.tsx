@@ -1,9 +1,10 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-import { password, restCountriesApi } from "@/public/assets";
+import { password, countriesRestApi, spotify } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
+
 
 const Projects = () => {
     return (
@@ -18,14 +19,14 @@ const Projects = () => {
                     <div className="flex flex-col xl:flex-row gap-6">
                         <a
                             className="w-full xl:w-1/2 h-auto relative group"
-                            href="https://password-generator-navy.vercel.app/"
+                            href="https://spotify-clone-react-typescript-api.vercel.app/"
                             target="_blank"
                         >
                             <div>
                                 <Image
                                     className="w-full h-full object-contain"
-                                    src={password}
-                                    alt="Password Generator"
+                                    src={spotify}
+                                    alt="Spotify Clone"
                                 />
                             </div>
                         </a>
@@ -64,7 +65,7 @@ const Projects = () => {
                                 </a>
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://password-generator-navy.vercel.app/"
+                                    href="https://spotify-clone-react-typescript-api.vercel.app/"
                                 >
                                     <RxOpenInNewWindow />
                                 </a>
@@ -77,13 +78,13 @@ const Projects = () => {
                     <div className="flex flex-col xl:flex-row-reverse gap-6">
                         <a
                             className="w-full xl:w-1/2 h-auto relative group"
-                            href="https://password-generator-navy.vercel.app/"
+                            href="https://rest-countries-api-xi-topaz.vercel.app/"
                             target="_blank"
                         >
                             <div>
                                 <Image
-                                    className="w-full h-full object-contain"
-                                    src={restCountriesApi}
+                                    className="w-full h-full object-contain rounded-lg"
+                                    src={countriesRestApi}
                                     alt="Rest Countries API"
                                 />
                             </div>
@@ -116,7 +117,7 @@ const Projects = () => {
                                 </a>
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://password-generator-navy.vercel.app/"
+                                    href="https://rest-countries-api-xi-topaz.vercel.app/"
                                 >
                                     <RxOpenInNewWindow />
                                 </a>

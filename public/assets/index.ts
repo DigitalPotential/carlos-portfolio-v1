@@ -17,6 +17,29 @@ import nextjsLogo from "./images/nextjsLogo.svg";
 import webLogo from "./images/webLogo.svg";
 import MUILogo from "./images/MUILogo.svg";
 import webflowLogo from "./images/webflowLogo.svg";
-import restCountriesApi from "./images/restCountriesApi.png";
+import countriesRestApi from "./images/countriesRestApi.png";
+import spotify from "./images/spotifyDesktopMobile.png";
 
-export { restCountriesApi, webflowLogo, MUILogo, carlos, logo, password, skillsCircle, cssLogo, htmLogo, framerMotionLogo, javascriptLogo, reactLogo, typescriptLogo, nodejsLogo, expressLogo, mongodbLogo, gitLogo, tailwindcssLogo, nextjsLogo, webLogo };
+export {
+    countriesRestApi,
+    webflowLogo,
+    MUILogo,
+    carlos,
+    logo,
+    password,
+    skillsCircle,
+    cssLogo,
+    htmLogo,
+    framerMotionLogo,
+    javascriptLogo,
+    reactLogo,
+    typescriptLogo,
+    nodejsLogo,
+    expressLogo,
+    mongodbLogo,
+    gitLogo,
+    tailwindcssLogo,
+    nextjsLogo,
+    webLogo,
+    spotify,
+};
