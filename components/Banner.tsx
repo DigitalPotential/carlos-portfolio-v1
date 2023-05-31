@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Lottie from "lottie-react";
+import animationData from "../public/assets/lottieDevelopment.json";
 
 const Banner = () => {
     const ref = useRef<string | any>("");
@@ -23,8 +25,9 @@ const Banner = () => {
     return (
         <div
             id="home"
-            className="max-w-contentContainer mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4"
+            className="max-w-contentContainer flex mx-auto "
         >
+            <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
             <motion.h3
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -72,6 +75,10 @@ const Banner = () => {
                     Check out my Projects!
                 </motion.button>
             </Link>
+            </div>
+            <div className="flex items-center justify-center">
+                <Lottie className="w-[400px]" animationData={animationData} />
+            </div>
         </div>
     );
 };

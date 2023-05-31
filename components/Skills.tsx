@@ -21,6 +21,8 @@ import {
     MUILogo,
 } from "@/public/assets";
 import { ImageProps } from "next/image";
+import Lottie from "lottie-react";
+import animationData from "../public/assets/lottieBlob.json";
 
 interface SkillProps {
     name: string;
@@ -63,8 +65,9 @@ const Skills = () => {
                         style={{ objectFit: "fill" }}
                         // className="w-full h-[80vh] items-center justify-center absolute"
                     /> */}
-                    <motion.div className="flex items-center justify-center rounded-full font-semibold xs:bg-textGreen text-textDark py-3 px-3 shadow-black cursor-pointer">
-                        <Image src={webLogo} alt="weblogo" className="w-12" />
+                    <motion.div className="flex items-center justify-center rounded-full font-semibold xs:bg-textGreen text-textDark shadow-black cursor-pointer">
+                        {/* <Image src={webLogo} alt="weblogo" className="w-12" /> */}
+                        <Lottie className="w-24" animationData={animationData} />
                     </motion.div>
                     <Skill imageSrc={cssLogo} name="css" x="30vw" y="10vw" />
                     <Skill
