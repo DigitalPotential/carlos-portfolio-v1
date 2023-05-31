@@ -51,8 +51,8 @@ const Skill: React.FC<SkillProps> = ({ name, imageSrc, x, y }) => {
 const Skills = () => {
     return (
         <div className="max-w-container mx-auto">
-            <h2 className="font-unbounded text-white font-bold text-5xl w-full text-center">
-                Skills
+            <h2 className="font-unbounded text-white font-bold text-3xl w-full text-center">
+                Technologies I like to use
             </h2>
             <div className="flex justify-center items-center mt-10">
                 <div className="w-full h-[300px] xs:h-[600px] relative flex items-center justify-center">

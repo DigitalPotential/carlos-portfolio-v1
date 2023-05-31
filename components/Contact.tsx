@@ -13,7 +13,7 @@ const Contact = () => {
                 Get In Touch
             </h2>
             <p className="max-w-[600px] text-center text-textDark">
-            {`If you're interested in hiring me, please feel free to contact me via email or phone. I look forward to hearing from you and discussing how I can assist you.`}
+            If you are interested in hiring me, please feel free to contact me via email or on <span className="text-textGreen"><a href="https://www.linkedin.com/in/carlos-digital-potential/">LinkedIn</a></span>. I look forward to hearing from you and discussing how I can assist you.
             </p>
             <a href="mailto:carlos@digitalpotential.se">
               <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">

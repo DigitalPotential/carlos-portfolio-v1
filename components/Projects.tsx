@@ -9,7 +9,7 @@ import { RxOpenInNewWindow } from "react-icons/rx";
 const Projects = () => {
     return (
         <section
-            id="project"
+            id="projects"
             className="max-w-container mx-auto lgl:px-20 py-24"
         >
             <SectionTitle title="Some Things I have Built" titleNo="03" />

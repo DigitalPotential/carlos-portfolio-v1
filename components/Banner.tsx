@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Banner = () => {
+    const ref = useRef<string | any>("");
+    const handleScroll = (
+        e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    ) => {
+        e.preventDefault();
+        const href = e.currentTarget.href;
+        const targetId = href.replace(/.*#/, "");
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+            behavior: "smooth",
+        });
+        const links = document.querySelectorAll(".nav-link");
+        links.forEach((link) => {
+            link.classList.remove("active");
+        });
+        e.currentTarget.classList.add("active");
+    };
     return (
         <div
             id="home"
@@ -44,14 +62,16 @@ const Banner = () => {
                     </span>
                 </a>
             </motion.p>
-            <motion.button
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.9 }}
-                className="w-52 h-14 px-1 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
-            >
-                Check out my Projects!
-            </motion.button>
+            <Link href="#projects" onClick={handleScroll}>
+                <motion.button
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.9 }}
+                    className="nav-linkw-52 h-14 px-1 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+                >
+                    Check out my Projects!
+                </motion.button>
+            </Link>
         </div>
     );
 };

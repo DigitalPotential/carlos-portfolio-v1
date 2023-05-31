@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.active {
+  color: #64ffda;
+}
+
 .scrollGradient {
     background: 
       linear-gradient(#0a192f 33%, rgba(10,25,47, 0)),

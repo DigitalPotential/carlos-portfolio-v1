@@ -31,9 +31,9 @@ export default function Home() {
                    <Banner />
                    <About />
                    <Skills />
-                   <Experience />
                    <Projects />
                    <Archive />
+                   <Experience />
                    {/* <Testimonials /> */}
                    <Contact />
     
