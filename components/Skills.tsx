@@ -39,7 +39,7 @@ const Skill: React.FC<SkillProps> = ({ name, imageSrc, x, y }) => {
     return (
         <motion.div
             ref={ref}
-            className="flex items-center justify-center rounded-full font-semibold w-12 h-12 xs:w-14 xs:h-14 lgl:w-20 lgl:h-20 xs:bg-textGreen text-textDark p-2 xs:p-3 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold w-12 h-12 xs:w-14 xs:h-14 lgl:w-20 lgl:h-20 xl:w-32 xl:h-32 xs:bg-textGreen text-textDark p-2 xs:p-3 xl:p-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.3 }}
             initial={{ x: 0, y: 0 }}
             animate={{ x: inView ? x : 0, y: inView ? y : 0 }}
@@ -57,7 +57,7 @@ const Skills = () => {
                 Technologies I like to use
             </h2>
             <div className="flex justify-center items-center mt-10">
-                <div className="w-full h-[300px] xs:h-[600px] relative flex items-center justify-center">
+                <div className="w-full h-[200px] xs:h-[600px] relative flex items-center justify-center">
                     {/* <Image
                         src={skillsCircle}
                         alt="skillsCircle"
@@ -65,9 +65,9 @@ const Skills = () => {
                         style={{ objectFit: "fill" }}
                         // className="w-full h-[80vh] items-center justify-center absolute"
                     /> */}
-                    <motion.div className="flex items-center justify-center rounded-full font-semibold xs:bg-textGreen text-textDark shadow-black cursor-pointer">
+                    <motion.div className="flex items-center justify-center rounded-full font-semibold text-textDark shadow-black cursor-pointer">
                         {/* <Image src={webLogo} alt="weblogo" className="w-12" /> */}
-                        <Lottie className="w-24" animationData={animationData} />
+                        <Lottie className="w-20 xs:w-12 sm:w-16 md:w-24 lgl:w-36 xl:w-44 " animationData={animationData} />
                     </motion.div>
                     <Skill imageSrc={cssLogo} name="css" x="30vw" y="10vw" />
                     <Skill

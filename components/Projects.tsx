@@ -74,6 +74,8 @@ const Projects = () => {
                     </div>
                 </div>
                 {/* Project 2 */}
+                
+
                 <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
                     <div className="flex flex-col xl:flex-row-reverse gap-6">
                         <a
