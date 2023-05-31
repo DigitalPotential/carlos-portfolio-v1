@@ -10,9 +10,8 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
-// import ContactMap from "@/components/ContactMap";
-// import Map from "@/components/Map";
 import Skills from "@/components/Skills";
+import Archive from "@/components/Archive";
 
 
 
@@ -34,9 +33,10 @@ export default function Home() {
                    <Skills />
                    <Experience />
                    <Projects />
-                   <Testimonials />
+                   <Archive />
+                   {/* <Testimonials /> */}
                    <Contact />
-                   {/* <ContactMap /> */}
+    
                    {/* Footer */}
                 </div>
                 <motion.div

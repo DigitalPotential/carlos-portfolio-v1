@@ -31,12 +31,6 @@ const ScanrecoGroup = () => {
                     </span>
                     {`My profound understanding of the product construction and functionality bolsters our commitment to 'Never-Stop Technology' and optimized human-machine interactions.`}
                 </li>
-                <li className="text-base flex gap-2 text-textDark">
-                    <span className="text-textGreen mt-1">
-                        <TiArrowForward />
-                    </span>
-                    This hands-on experience provided me a holistic understanding of the digital landscape.
-                </li>
             </ul>
         </motion.div>
     );

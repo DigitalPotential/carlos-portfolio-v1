@@ -45,9 +45,7 @@ const Testimonials = () => {
                         </h1>
 
                         <p className="lg:w-8/12 text-white mt-5 mb-12">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Diam elementum nibh libero mauris vulputate
-                            neque. At condimentum vitae scelerisque consecte.
+                            {`These are reviews from people that have used my services as a web developer.`}
                         </p>
                     </div>
                     <div>
@@ -71,7 +69,7 @@ const Testimonials = () => {
                                         </div>
                                         <div className="ml-6">
                                             <h1 className="text-white text-base font-semibold">
-                                                Tony Stark
+                                                Erik Moreno
                                             </h1>
                                             <h2 className="text-white font-light mt-2">
                                                 December 2020
