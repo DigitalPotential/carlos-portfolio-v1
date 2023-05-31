@@ -24,7 +24,7 @@ const Projects = () => {
                         >
                             <div>
                                 <Image
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain rounded-lg"
                                     src={spotify}
                                     alt="Spotify Clone"
                                 />
@@ -135,7 +135,7 @@ const Projects = () => {
                         >
                             <div>
                                 <Image
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain rounded-lg"
                                     src={DigitalWeb}
                                     alt="Digital Potential"
                                 />
