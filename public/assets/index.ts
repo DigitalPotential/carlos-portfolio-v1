@@ -19,6 +19,9 @@ import MUILogo from "./images/MUILogo.svg";
 import webflowLogo from "./images/webflowLogo.svg";
 import countriesRestApi from "./images/countriesRestApi.png";
 import spotify from "./images/spotifyDesktopMobile.png";
+import DigitalWeb from "./images/DigitalPotentialWeb.png";
+import Protectionmask from "./images/Protectionmask.png";
+import UVCSafe from "./images/UVCSafe.png";
 
 export {
     countriesRestApi,
@@ -42,4 +45,7 @@ export {
     nextjsLogo,
     webLogo,
     spotify,
+    DigitalWeb,
+    Protectionmask,
+    UVCSafe,
 };

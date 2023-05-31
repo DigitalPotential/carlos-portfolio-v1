@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-import { password, countriesRestApi, spotify } from "@/public/assets";
+import { password, countriesRestApi, spotify, DigitalWeb } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -130,14 +130,14 @@ const Projects = () => {
                     <div className="flex flex-col xl:flex-row gap-6">
                         <a
                             className="w-full xl:w-1/2 h-auto relative group"
-                            href="https://password-generator-navy.vercel.app/"
+                            href="https://digitalpotential.webflow.io/"
                             target="_blank"
                         >
                             <div>
                                 <Image
                                     className="w-full h-full object-contain"
-                                    src={password}
-                                    alt="Password Generator"
+                                    src={DigitalWeb}
+                                    alt="Digital Potential"
                                 />
                             </div>
                         </a>
@@ -146,47 +146,19 @@ const Projects = () => {
                                 Featured Project
                             </p>
                             <h3 className="text-2xl font-bold text-white">
-                                Password Generator
+                                Digital Potential
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-sm text-white">
-                                This password generator app allows users to
-                                create secure and customized passwords based on
-                                their preferences. The app features a responsive
-                                design that works seamlessly on various screen
-                                sizes and devices. Users can choose the length
-                                of their passwords, character types, and receive
-                                a strength assessment of the generated password.
-                                It was built with
-                                <span className="text-textGreen">
-                                    React
-                                </span>{" "}
-                                and{" "}
-                                <span className="text-textGreen">
-                                    Typescript
-                                </span>
-                                .{" "}
-                                <span className="text-textGreen">
-                                    Tailwind CSS
-                                </span>{" "}
-                                was used for styling.
+                                This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more.
                             </p>
                             <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-                                <li>React</li>
-                                <li>Typescript</li>
-                                <li>Tailwind CSS</li>
-                                <li>Framer Motion</li>
-                                <li>Vite</li>
+                                <li>Webflow</li>
+                                <li>Live site</li>
                             </ul>
                             <div className="text-white text-2xl flex gap-4">
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://github.com/DigitalPotential/password-generator"
-                                >
-                                    <TbBrandGithub />
-                                </a>
-                                <a
-                                    className="hover:text-textGreen duration-300"
-                                    href="https://password-generator-navy.vercel.app/"
+                                    href="https://digitalpotential.webflow.io/"
                                 >
                                     <RxOpenInNewWindow />
                                 </a>
