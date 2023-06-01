@@ -37,7 +37,7 @@ const Projects = () => {
                             <h3 className="text-2xl font-bold text-white">
                                 Spotify Clone
                             </h3>
-                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-sm text-white">
+                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
                                 The Spotify Clone is a web application that
                                 mimics key functionalities of Spotify. Built
                                 with React.js, TypeScript, and
@@ -91,17 +91,17 @@ const Projects = () => {
                                 />
                             </div>
                         </a>
-                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-start text-left z-10">
+                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
                             <h3 className="text-2xl font-bold text-white">
                                 Countries REST API
                             </h3>
-                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-sm text-white">
+                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
                                 {`This web application provides detailed data on countries worldwide using the REST Countries API. Users can browse, search, filter countries, and access more specific country information. The responsive design, light and dark modes, and smooth user experience are built with React.`}
                             </p>
-                            <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+                            <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                                 <li>React</li>
                                 <li>Typescript</li>
                                 <li>Tailwind CSS</li>
@@ -150,7 +150,7 @@ const Projects = () => {
                             <h3 className="text-2xl font-bold text-white">
                                 Digital Potential
                             </h3>
-                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-sm text-white">
+                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
                                 This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more.
                             </p>
                             <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
