@@ -23,7 +23,7 @@ const Banner = () => {
         e.currentTarget.classList.add("active");
     };
     return (
-        <div id="home" className="max-w-contentContainer h-screen flex flex-col mdl:flex-row mx-auto z-40">
+        <div id="home" className="max-w-contentContainer xs:h-[90vh] flex flex-col mdl:flex-row mx-auto z-40">
             <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
                 <motion.h3
                     initial={{ y: 10, opacity: 0 }}
@@ -70,13 +70,13 @@ const Banner = () => {
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.9 }}
-                        className="nav-linkw-52 h-14 px-1 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+                        className="nav-link w-56 h-14 px-1 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
                     >
                         Check out my Projects!
                     </motion.button>
                 </Link>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center py-10 mdl:py-24">
                 <Lottie className="w-[400px]" animationData={animationData} />
             </div>
         </div>

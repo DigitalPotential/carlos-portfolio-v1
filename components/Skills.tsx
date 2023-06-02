@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import {
-    skillsCircle,
     cssLogo,
     expressLogo,
     framerMotionLogo,
@@ -16,7 +15,6 @@ import {
     reactLogo,
     tailwindcssLogo,
     typescriptLogo,
-    webLogo,
     webflowLogo,
     MUILogo,
 } from "@/public/assets";
