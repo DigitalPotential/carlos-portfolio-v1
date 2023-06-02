@@ -1,7 +1,7 @@
 import React from "react";
 import SectionTitle from "./SectionTitle";
 import Image from "next/image";
-import { password, countriesRestApi, spotify, DigitalWeb } from "@/public/assets";
+import { countriesRestApi, spotify, DigitalWeb } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
 
@@ -12,7 +12,7 @@ const Projects = () => {
             id="projects"
             className="max-w-container mx-auto lgl:px-20 py-24"
         >
-            <SectionTitle title="Some Things I have Built" titleNo="03" />
+            <SectionTitle title="Some Things I have Built" titleNo="02" />
             <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
                 {/* Project 1 */}
                 <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
@@ -34,7 +34,7 @@ const Projects = () => {
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-xl font-bold text-white">
+                            <h3 className="text-xl xs:text-2xl font-bold text-white">
                                 Spotify Clone
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
@@ -95,7 +95,7 @@ const Projects = () => {
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-xl font-bold text-white">
+                            <h3 className="text-xl xs:text-2xl font-bold text-white">
                                 Countries REST API
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
@@ -147,7 +147,7 @@ const Projects = () => {
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-xl font-bold text-white">
+                            <h3 className="text-xl xs:text-2xl font-bold text-white">
                                 Digital Potential
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">

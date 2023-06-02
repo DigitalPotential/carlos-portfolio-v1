@@ -58,16 +58,11 @@ const Skills = () => {
             </h2>
             <div className="flex justify-center items-center mt-10">
                 <div className="w-full h-[200px] xs:h-[600px] relative flex items-center justify-center">
-                    {/* <Image
-                        src={skillsCircle}
-                        alt="skillsCircle"
-                        fill={true}
-                        style={{ objectFit: "fill" }}
-                        // className="w-full h-[80vh] items-center justify-center absolute"
-                    /> */}
                     <motion.div className="flex items-center justify-center rounded-full font-semibold text-textDark shadow-black cursor-pointer">
-                        {/* <Image src={webLogo} alt="weblogo" className="w-12" /> */}
-                        <Lottie className="w-20 xs:w-12 sm:w-16 md:w-24 lgl:w-36 xl:w-44 " animationData={animationData} />
+                        <Lottie
+                            className="w-20 xs:w-12 sm:w-16 md:w-24 lgl:w-36 xl:w-72 "
+                            animationData={animationData}
+                        />
                     </motion.div>
                     <Skill imageSrc={cssLogo} name="css" x="30vw" y="10vw" />
                     <Skill

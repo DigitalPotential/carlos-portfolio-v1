@@ -23,7 +23,7 @@ const Banner = () => {
         e.currentTarget.classList.add("active");
     };
     return (
-        <div id="home" className="max-w-contentContainer flex flex-col mdl:flex-row mx-auto z-40">
+        <div id="home" className="max-w-contentContainer h-screen flex flex-col mdl:flex-row mx-auto z-40">
             <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
                 <motion.h3
                     initial={{ y: 10, opacity: 0 }}

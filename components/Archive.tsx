@@ -16,17 +16,13 @@ const Archive = () => {
                 <ArchiveCard
                     title="Protectionmask"
                     des="Protectionmask is a company selling a Innovative Escape Mask
-Expertly designed for protection in the event of a fire, our Protectionmask® absorbs up to 95% of the most dangerous fire gases and particulates. "
+Expertly designed for protection in the event of a fire, our Protectionmask® absorbs up to 95% of the most dangerous fire gases and particulates."
                     listItem={["Webflow", "Live site"]}
                     link="https://www.protectionmask.com/"
                 />
                 <ArchiveCard
                     title="Password Generator"
-                    des="This password generator app allows users to
-                    create secure and customized passwords based on
-                    their preferences. Users can choose the length
-                    of their passwords, character types, and receive
-                    a strength assessment of the generated password."
+                    des="This password generator enables secure, customized password creation based on user preferences. They can select length, character types, and receive strength assessment of the generated password."
                     listItem={["React", "TailwindCSS", "Vite"]}
                     link="https://password-generator-navy.vercel.app/"
                 />
