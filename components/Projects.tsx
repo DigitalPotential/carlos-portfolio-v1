@@ -30,11 +30,11 @@ const Projects = () => {
                                 />
                             </div>
                         </a>
-                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
+                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-2xl font-bold text-white">
+                            <h3 className="text-xl font-bold text-white">
                                 Spotify Clone
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
@@ -95,7 +95,7 @@ const Projects = () => {
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-2xl font-bold text-white">
+                            <h3 className="text-xl font-bold text-white">
                                 Countries REST API
                             </h3>
                             <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
@@ -143,14 +143,14 @@ const Projects = () => {
                                 />
                             </div>
                         </a>
-                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
+                        <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
                             <p className="font-titleFont text-textGreen text-sm tracking-wide">
                                 Featured Project
                             </p>
-                            <h3 className="text-2xl font-bold text-white">
+                            <h3 className="text-xl font-bold text-white">
                                 Digital Potential
                             </h3>
-                            <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
+                            <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">
                                 This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more.
                             </p>
                             <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">

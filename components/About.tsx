@@ -33,7 +33,7 @@ const About = () => {
                         Here are a few technologies I have been working with
                         recently:
                     </p>
-                    <ul className="max-w[450px] text-sm font-unbounded grid grid-cols-2 gap-2 mt-6">
+                    <ul className="max-w[450px] text-sm font-unbounded grid xs:grid-cols-3 grid-cols-2 gap-2 mt-6 flex-wrap">
                         <li className="flex items-center gap-2">
                             <span className="text-textGreen">
                                 <AiFillThunderbolt />
@@ -70,11 +70,29 @@ const About = () => {
                             </span>
                             MongoDB
                         </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Node.js
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Express.js
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            MUI
+                        </li>
                     </ul>
                 </div>
                 <div className="w-full lgl:w-1/3 h-80 relative group">
-                    <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
-                        <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+                    <div className="absolute w-full h-80 xs:-left-6 xs:-top-6 rounded-lg">
+                        <div className="w-full h-full relative z-20 flex justify-center xs:pl-6 lgl:pl-0">
                             <Image
                                 className="rounded-lg h-full object-cover"
                                 src={carlos}

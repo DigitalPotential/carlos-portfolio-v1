@@ -32,14 +32,14 @@ const Navbar = () => {
     };
 
     function handleClick(e: any) {
-        if(e.target.contains(ref.current)) {
+        if (e.target.contains(ref.current)) {
             setShowMenu(false);
         }
     }
 
     return (
-        <div className="w-full shadow-navbarShadow h-20 lg:h-[10vh] bg-bodyColor sticky top-0 z-50 px-4">
-            <div className="max-w-container font-unbounded mx-auto py-1 flex justify-between items-center h-full">
+        <div className="w-full h-20 lg:h-[10vh] sticky top-3 z-50 px-4">
+            <div className="max-w-container font-unbounded mx-auto p-6 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -143,13 +143,13 @@ const Navbar = () => {
                     <div
                         ref={(node) => (ref.current = node)}
                         onClick={handleClick}
-                        className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
+                        className="absolute mdl:hidden top-0 right-0 w-full h-screen flex flex-col items-end"
                     >
                         <motion.div
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.1, delay: 0.5 }}
-                            className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-5 py-10 relative"
+                            className="w-[80%] h-full overflow-y-scroll scrollbarHide flex flex-col items-center px-5 py-10 relative rounded-lg bg-[rgba(9,24,46,0.95)] "
                         >
                             <MdOutlineClose
                                 onClick={() => setShowMenu(false)}
