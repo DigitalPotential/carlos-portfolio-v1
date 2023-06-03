@@ -40,7 +40,7 @@ module.exports = {
                 bodyColor: "#0A192F",
                 textGreen: "#64FFDA",
                 textDark: "#8892B0",
-                textLight: "CCD6F6",
+                textLight: "#CCD6F6",
                 hoverColor: "rgba(100,255,218,0.1)",
             },
         },

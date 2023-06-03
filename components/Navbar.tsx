@@ -38,8 +38,8 @@ const Navbar = () => {
     }
 
     return (
-        <div className="w-full h-20 lg:h-[10vh] sticky top-3 z-50 px-4">
-            <div className="max-w-container font-unbounded mx-auto p-6 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
+        <div className="w-full h-20 xs:h-[70px] sticky top-4 z-50 p-4">
+            <div className="max-w-container font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -269,7 +269,7 @@ const Navbar = () => {
                                     </motion.button>
                                 </a>
                                 <div className="w-full h-full flex flex-col items-center justify-end gap-4 text-textLight">
-                                    <div className="text-white flex flex-row gap-4 ">
+                                    <div className="flex flex-row gap-4 ">
                                         <motion.a
                                             initial={{ y: 20, opacity: 0 }}
                                             animate={{ y: 0, opacity: 1 }}

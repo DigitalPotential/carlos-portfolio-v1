@@ -23,7 +23,10 @@ const Banner = () => {
         e.currentTarget.classList.add("active");
     };
     return (
-        <div id="home" className="max-w-contentContainer xs:h-[90vh] flex flex-col mdl:flex-row mx-auto z-40">
+        <div
+            id="home"
+            className="max-w-contentContainer xs:h-[90vh] flex flex-col items-center justify-center mdl:flex-row mx-auto z-40"
+        >
             <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
                 <motion.h3
                     initial={{ y: 10, opacity: 0 }}
@@ -50,19 +53,21 @@ const Banner = () => {
                     transition={{ duration: 0.5, delay: 0.8 }}
                     className="text-base flex flex-col md:max-w-[650px] text-textDark font-medium"
                 >
-                    I am a web developer based in Stockholm, Sweden specializing
-                    in the Mern stack. I enjoy creating things that live on the
-                    internet, whether that be websites, applications, or
-                    anything in between. My goal is to always build products
-                    that provide pixel-perfect, performant experiences.{""}
+                    I am a web developer based in Stockholm, Sweden,
+                    specializing in the MERN stack. With experience developing
+                    websites for a range of companies, I enjoy creating things
+                    that live on the internet, be it websites, applications, or
+                    anything in between. My goal is always to build products
+                    that provide pixel-perfect, performant experiences, meeting
+                    the unique needs of each business I work with.{""}
                     <a
                         href="https://digitalpotential.webflow.io/"
                         target="_blank"
                     >
-                        <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
+                        {/* <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
                             Learn more
                             <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-                        </span>
+                        </span> */}
                     </a>
                 </motion.p>
                 <Link href="#projects" onClick={handleScroll}>
