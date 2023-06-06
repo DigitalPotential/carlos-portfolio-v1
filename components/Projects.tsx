@@ -132,7 +132,7 @@ const Projects = () => {
                     <div className="flex flex-col xl:flex-row gap-6">
                         <a
                             className="w-full xl:w-1/2 h-auto relative group"
-                            href="https://digitalpotential.webflow.io/"
+                            href="https://www.digitalpotential.se/"
                             target="_blank"
                         >
                             <div>
@@ -160,7 +160,7 @@ const Projects = () => {
                             <div className="text-white text-2xl flex gap-4">
                                 <a
                                     className="hover:text-textGreen duration-300"
-                                    href="https://digitalpotential.webflow.io/"
+                                    href="https://www.digitalpotential.se/"
                                 >
                                     <RxOpenInNewWindow />
                                 </a>
