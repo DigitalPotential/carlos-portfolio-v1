@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Lottie from "lottie-react";
-import animationData from "../public/assets/lottieDevelopment.json";
+import animationData from "../public/assets/techLottie.json";
 
 const Banner = () => {
     const ref = useRef<string | any>("");
@@ -82,7 +82,7 @@ const Banner = () => {
                 </Link>
             </div>
             <div className="flex items-start justify-center py-10 mdl:py-24">
-                <Lottie className="w-[400px]" animationData={animationData} />
+                <Lottie className="w-[450px]" animationData={animationData} />
             </div>
         </div>
     );
