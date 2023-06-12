@@ -64,10 +64,6 @@ const Banner = () => {
                         href="https://digitalpotential.webflow.io/"
                         target="_blank"
                     >
-                        {/* <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-x-hidden group">
-                            Learn more
-                            <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-                        </span> */}
                     </a>
                 </motion.p>
                 <Link href="#projects" onClick={handleScroll}>
