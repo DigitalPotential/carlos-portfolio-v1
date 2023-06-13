@@ -54,7 +54,7 @@ const Skills = () => {
             <h2 className="font-unbounded text-white font-bold text-3xl w-full text-center">
                 Technologies I like to use
             </h2>
-            <div className="flex justify-center items-center mt-10 xs:mt-24 xxxl:mt-44">
+            <div className="flex justify-center items-center mt-10 xs:mt-24 xxxl:mt-44 ultrawide:my-64">
                 <div className="w-full h-[200px] xs:h-[600px] relative flex items-center justify-center">
                     <motion.div className="flex items-center justify-center rounded-full font-semibold text-textDark shadow-black cursor-pointer">
                         <Lottie
