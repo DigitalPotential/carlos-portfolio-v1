@@ -1,4 +1,5 @@
 import React from "react";
+import Button3D from "./3DButton/Button3D";
 
 const Contact = () => {
     return (
@@ -15,10 +16,8 @@ const Contact = () => {
             <p className="max-w-[600px] text-center text-textDark">
             If you are interested in hiring me, please feel free to contact me via email or on <span className="text-textGreen"><a href="https://www.linkedin.com/in/carlos-digital-potential/">LinkedIn</a></span>. I look forward to hearing from you and discussing how I can assist you.
             </p>
-            <a href="mailto:carlos@digitalpotential.se">
-              <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-                Say Hello
-              </button>
+            <a className="w-full mt-5 flex items-center justify-center" href="mailto:carlos@digitalpotential.se">
+              <Button3D />
             </a>
         </section>
     );
