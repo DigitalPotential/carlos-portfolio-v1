@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
     "@react-three/fiber": "^8.13.3",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
@@ -29,8 +28,5 @@
     "tailwindcss": "3.3.2",
     "three": "^0.153.0",
     "typescript": "5.0.4"
-  },
-  "devDependencies": {
-    "@types/react-simple-maps": "^3.0.0"
   }
 }
