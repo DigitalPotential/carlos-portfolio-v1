@@ -1,4 +1,6 @@
-import { Suspense, useState, useEffect } from "react";
+"use client";
+
+import { Suspense, useState } from "react";
 import { motion, MotionConfig, useMotionValue } from "framer-motion";
 import { Shapes } from "./Shapes";
 import { transition } from "./buttonSettings";
@@ -19,7 +21,7 @@ const Button3D = () => {
   return (
     <MotionConfig transition={transition}>
       <motion.button
-        className="appearance-none border cursor-pointer border-textGreen text-white rounded-md m-0 px-6 py-1 font-bold text-3xl leading-none tracking-tighter relative flex items-center"
+        className="appearance-none border cursor-pointer border-textGreen text-white rounded-md m-0 px-6 py-1 font-bold text-xl leading-none tracking-tighter relative flex items-center"
         ref={ref}
         initial={false}
         animate={isHover ? "hover" : "rest"}
@@ -69,7 +71,7 @@ const Button3D = () => {
           className="w-56 py-5 font-semibold z-10"
           variants={{ hover: { scale: 0.85 }, press: { scale: 1.1 } }}
         >
-          Say Hello
+          Check out my Projects!
         </motion.div>
       </motion.button>
     </MotionConfig>

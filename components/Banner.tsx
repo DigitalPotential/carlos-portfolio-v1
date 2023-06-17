@@ -1,11 +1,13 @@
-import React, { useRef } from "react";
+"use client";
+
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/techLottie.json";
+import Button3D from "./3DButton/Button3D";
 
 const Banner = () => {
-    const ref = useRef<string | any>("");
     const handleScroll = (
         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
     ) => {
@@ -60,22 +62,30 @@ const Banner = () => {
                     anything in between. My goal is always to build products
                     that provide pixel-perfect, performant experiences, meeting
                     the unique needs of each business I work with.{""}
-                    <a
-                        href="https://digitalpotential.webflow.io/"
-                        target="_blank"
-                    >
-                    </a>
                 </motion.p>
-                <Link href="#projects" onClick={handleScroll}>
-                    <motion.button
+                <motion.div
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.9 }}
+                >
+                    <Link
+                        className="mt-4"
+                        href="#projects"
+                        onClick={handleScroll}
+                    >
+                        {/* <motion.button
                         initial={{ y: 10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.9 }}
                         className="nav-link w-56 h-14 px-1 text-sm font-unbounded border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
                     >
                         Check out my Projects!
-                    </motion.button>
-                </Link>
+                    </motion.button> */}
+                        <div className="button-container w-64 h-16 flex justify-center items-center">
+                            <Button3D />
+                        </div>
+                    </Link>
+                </motion.div>
             </div>
             <div className="flex items-start justify-center py-10 mdl:py-24">
                 <Lottie className="w-[450px]" animationData={animationData} />
@@ -85,3 +95,7 @@ const Banner = () => {
 };
 
 export default Banner;
+
+// initial={{ y: 10, opacity: 0 }}
+//                         animate={{ y: 0, opacity: 1 }}
+//                         transition={{ duration: 0.5, delay: 0.9 }}

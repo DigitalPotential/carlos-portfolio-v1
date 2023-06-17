@@ -17,7 +17,7 @@ const Contact = () => {
             If you are interested in hiring me, please feel free to contact me via email or on <span className="text-textGreen"><a href="https://www.linkedin.com/in/carlos-digital-potential/">LinkedIn</a></span>. I look forward to hearing from you and discussing how I can assist you.
             </p>
             <a className="w-full mt-5 flex items-center justify-center" href="mailto:carlos@digitalpotential.se">
-              <Button3D />
+              Say hello
             </a>
         </section>
     );

@@ -13,7 +13,6 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import Testimonials from "@/components/Testimonials";
 import Skills from "@/components/Skills";
 import Archive from "@/components/Archive";
 
@@ -66,7 +65,6 @@ export default function Home() {
                         <Projects />
                         <Archive />
                         <Experience />
-                        {/* <Testimonials /> */}
                         <Contact />
                     </div>
                     <motion.div
