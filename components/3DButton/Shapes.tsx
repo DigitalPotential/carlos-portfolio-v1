@@ -175,8 +175,9 @@ function Camera({ mouseX, mouseY, ...props }: CameraProps) {
   }, [camera, cameraRef, set]);
 
   useLayoutEffect(() => {
-    return cameraX.onChange(() => camera.lookAt(scene.position));
+    return cameraX.on("change", () => camera.lookAt(scene.position));
   }, [cameraX, camera, scene.position]);
+  
 
   return (
     <motion.perspectiveCamera
