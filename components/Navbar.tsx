@@ -39,8 +39,8 @@ const Navbar = () => {
     
     
     return (
-        <div className="w-full h-28 sticky top-4 z-50 p-4">
-            <div className="max-w-container h-28 font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
+        <div className="w-full min-h-[10vh] h-28 sticky top-4 z-50 py-4 px-4 xs:px-8">
+            <div className="max-w-container h-20 font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center rounded-lg">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <Image
                         className="w-12"
                         src={logo}
-                        alt="site clealogo"
+                        alt="site logo"
                         priority={true}
                     />
                 </motion.div>
