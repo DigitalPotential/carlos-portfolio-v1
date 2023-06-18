@@ -45,7 +45,7 @@ const Navbar = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Image className="w-12" src={logo} alt="site logo" priority={true} />
+                    <Image className="w-12" src={logo} alt="site clealogo" priority={true} />
                 </motion.div>
                 <div className="hidden lg:inline-flex items-center gap-7">
                     <ul className="flex text-[13px] gap-7">
@@ -143,7 +143,7 @@ const Navbar = () => {
                     <div
                         ref={(node) => (ref.current = node)}
                         onClick={handleClick}
-                        className="absolute mdl:hidden top-0 right-0 w-full h-screen flex flex-col items-end"
+                        className="absolute lg:hidden top-0 right-0 w-full h-screen flex flex-col items-end"
                     >
                         <motion.div
                             initial={{ y: -10, opacity: 0 }}
