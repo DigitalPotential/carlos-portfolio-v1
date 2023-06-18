@@ -81,7 +81,7 @@ const Banner = () => {
                     >
                         Check out my Projects!
                     </motion.button> */}
-                        <div className="button-container w-64 h-16 flex justify-center items-center">
+                        <div className="button-container w-64 h-16 ml-2 flex justify-center items-center">
                             <Button3D />
                         </div>
                     </Link>

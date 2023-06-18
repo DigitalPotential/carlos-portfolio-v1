@@ -10,7 +10,7 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className="max-w-container mx-auto lgl:px-20 py-24 xs:mt-28"
+            className="max-w-container mx-auto lgl:px-20 py-24 xs:mt-48"
         >
             <SectionTitle title="Some Things I have Built" titleNo="02" />
             <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">

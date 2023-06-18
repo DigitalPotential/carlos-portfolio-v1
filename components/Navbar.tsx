@@ -36,7 +36,42 @@ const Navbar = () => {
             setShowMenu(false);
         }
     }
+    
+    // const handleScroll = (
+    //     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+    // ) => {
+    //     e.preventDefault();
+    //     setShowMenu(false);
+    //     const href = e.currentTarget.href;
+    //     const targetId = href.replace(/.*#/, "");
+    //     const elem = document.getElementById(targetId);
+        
+    //     // The original scrolling action
+    //     elem?.scrollIntoView({
+    //         behavior: "smooth",
+    //     });
+        
+    //     // Delay the offset
+    //     setTimeout(() => {
+    //         // Now we offset the scroll by the navbar height
+    //         const navbarHeight = 10; // Set this to the height of your navbar
+    //         if (elem) {
+    //             window.scrollBy({
+    //                 top: -navbarHeight,
+    //                 behavior: 'smooth'
+    //             });
+    //         }
+    //     }, 300); // 300ms delay
+        
+    //     const links = document.querySelectorAll(".nav-link");
+    //     links.forEach((link) => {
+    //         link.classList.remove("active");
+    //     });
+    //     e.currentTarget.classList.add("active");
+    // };
+    
 
+    
     return (
         <div className="w-full h-28 xs:h-[70px] sticky top-4 z-50 p-4">
             <div className="max-w-container font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
@@ -45,7 +80,12 @@ const Navbar = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <Image className="w-12" src={logo} alt="site clealogo" priority={true} />
+                    <Image
+                        className="w-12"
+                        src={logo}
+                        alt="site clealogo"
+                        priority={true}
+                    />
                 </motion.div>
                 <div className="hidden lg:inline-flex items-center gap-7">
                     <ul className="flex text-[13px] gap-7">
@@ -125,7 +165,7 @@ const Navbar = () => {
                             initial={{ y: -10, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.1, delay: 0.5 }}
-                            className="px-4 py-2 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+                            className="px-4 py-2 text-textGreen text-[13px] border border-textGreen rounded-md hover:bg-hoverColor duration-300"
                         >
                             Resume
                         </motion.button>

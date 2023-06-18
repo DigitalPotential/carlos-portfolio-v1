@@ -18,7 +18,7 @@ import Archive from "@/components/Archive";
 
 export default function Home() {
     return (
-        <main className="relative w-full min-h-screen font-montserrat text-textLight overflow-x-hidden">
+        <main className="relative w-full min-h-screen font-montserrat text-textLight">
             <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
                 <div className="absolute inset-0 overflow-hidden">
                     <Lottie
@@ -31,6 +31,7 @@ export default function Home() {
                             transform: "translateX(-50%)",
                             minHeight: "100%",
                             minWidth: "100%",
+                            maxHeight: "100%",
                         }}
                     />
                     <Lottie
@@ -43,13 +44,14 @@ export default function Home() {
                             transform: "translateX(-50%)",
                             minHeight: "100%",
                             minWidth: "100%",
+                            maxHeight: "100%",
                         }}
                     />
                 </div>
             </div>
-            <div className="relative z-10 w-full h-full overflow-y-auto overflow-x-hidden">
+            <div className="relative z-10 w-full h-full overflow-x-hidden overflow-y-auto">
                 <Navbar />
-                <div className="w-full h-[90vh] flex items-center gap-20 justify-between">
+                <div className="w-full h-full flex items-center gap-20 justify-between">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
