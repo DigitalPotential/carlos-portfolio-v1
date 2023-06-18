@@ -37,44 +37,10 @@ const Navbar = () => {
         }
     }
     
-    // const handleScroll = (
-    //     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    // ) => {
-    //     e.preventDefault();
-    //     setShowMenu(false);
-    //     const href = e.currentTarget.href;
-    //     const targetId = href.replace(/.*#/, "");
-    //     const elem = document.getElementById(targetId);
-        
-    //     // The original scrolling action
-    //     elem?.scrollIntoView({
-    //         behavior: "smooth",
-    //     });
-        
-    //     // Delay the offset
-    //     setTimeout(() => {
-    //         // Now we offset the scroll by the navbar height
-    //         const navbarHeight = 10; // Set this to the height of your navbar
-    //         if (elem) {
-    //             window.scrollBy({
-    //                 top: -navbarHeight,
-    //                 behavior: 'smooth'
-    //             });
-    //         }
-    //     }, 300); // 300ms delay
-        
-    //     const links = document.querySelectorAll(".nav-link");
-    //     links.forEach((link) => {
-    //         link.classList.remove("active");
-    //     });
-    //     e.currentTarget.classList.add("active");
-    // };
-    
-
     
     return (
-        <div className="w-full h-28 xs:h-[70px] sticky top-4 z-50 p-4">
-            <div className="max-w-container font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
+        <div className="w-full h-28 sticky top-4 z-50 p-4">
+            <div className="max-w-container h-28 font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center h-full xs:h-[7vh] rounded-lg">
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

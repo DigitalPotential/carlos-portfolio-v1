@@ -29,7 +29,7 @@ const Banner = () => {
             id="home"
             className="max-w-contentContainer xs:h-[90vh] flex flex-col items-center justify-center mdl:flex-row mx-auto z-40"
         >
-            <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-4 lgl:gap-8 mdl:px-10 xl:px-4">
+            <div className="mx-auto py-10 mdl:py-24 flex flex-col gap-3 lgl:gap-8 mdl:pl-20 xl:px-8">
                 <motion.h3
                     initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -81,14 +81,14 @@ const Banner = () => {
                     >
                         Check out my Projects!
                     </motion.button> */}
-                        <div className="button-container w-64 h-16 ml-2 flex justify-center items-center">
+                        <div className="button-container w-64 h-16 ml-2 mt-5 lgl:mt-0 flex justify-center items-center">
                             <Button3D />
                         </div>
                     </Link>
                 </motion.div>
             </div>
-            <div className="flex items-start justify-center py-10 mdl:py-24">
-                <Lottie className="w-[450px]" animationData={animationData} />
+            <div className="flex items-start justify-center xs:py-0 mdl:py-24">
+                <Lottie className="w-[400px] lgl:w-[450px]" animationData={animationData} />
             </div>
         </div>
     );
