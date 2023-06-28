@@ -25,6 +25,9 @@ module.exports = {
                 xxl: "1440px",
                 xxxl: "1920px",
                 ultrawide: "2560px",
+                superwide: "3200px",
+                megawide: "3700px",
+
             },
             fontFamily: {
                 unbounded: ["Unbounded", "cursive"],
