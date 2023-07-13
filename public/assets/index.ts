@@ -22,6 +22,7 @@ import spotify from "./images/spotifyDesktopMobile.png";
 import DigitalWeb from "./images/DigitalPotentialWeb.png";
 import Protectionmask from "./images/Protectionmask.png";
 import UVCSafe from "./images/UVCSafe.png";
+import netflixclone from "./images/netflixclone.png";
 
 export {
     countriesRestApi,
@@ -48,4 +49,5 @@ export {
     DigitalWeb,
     Protectionmask,
     UVCSafe,
+    netflixclone,
 };
