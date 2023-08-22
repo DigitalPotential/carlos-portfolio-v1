@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Unbounded, Montserrat } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
     title: "Carlos Portfolio",
@@ -15,7 +16,10 @@ export default function RootLayout({
         <html lang="en">
             <head>
             </head>
-            <body>{children}</body>
+            <body>
+                {children}
+                <Analytics />
+            </body>
         </html>
     );
 }
