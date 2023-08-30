@@ -62,13 +62,19 @@ const About = () => {
                             <span className="text-textGreen">
                                 <AiFillThunderbolt />
                             </span>
-                            TailwindCSS
+                            Clerk
                         </li>
                         <li className="flex items-center gap-2">
                             <span className="text-textGreen">
                                 <AiFillThunderbolt />
                             </span>
                             MongoDB
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Prisma
                         </li>
                         <li className="flex items-center gap-2">
                             <span className="text-textGreen">
@@ -81,12 +87,40 @@ const About = () => {
                                 <AiFillThunderbolt />
                             </span>
                             Express.js
+                        </li><li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Axios
+                        </li><li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Zustand
                         </li>
                         <li className="flex items-center gap-2">
                             <span className="text-textGreen">
                                 <AiFillThunderbolt />
                             </span>
                             MUI
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Shadcn/UI
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            Headless UI
+                        </li>
+                        <li className="flex items-center gap-2">
+                            <span className="text-textGreen">
+                                <AiFillThunderbolt />
+                            </span>
+                            TailwindCSS
                         </li>
                     </ul>
                 </div>

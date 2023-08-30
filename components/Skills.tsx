@@ -17,6 +17,7 @@ import {
     typescriptLogo,
     webflowLogo,
     MUILogo,
+    PrismaDarkSymbol,
 } from "@/public/assets";
 import { ImageProps } from "next/image";
 import Lottie from "lottie-react";
@@ -120,7 +121,7 @@ const Skills = () => {
                         x="-20vw"
                         y="-15vw"
                     />
-                    <Skill imageSrc={htmLogo} name="HTML" x="40vw" y="-15vw" />
+                    <Skill imageSrc={PrismaDarkSymbol} name="HTML" x="40vw" y="-15vw" />
                 </div>
             </div>
         </div>

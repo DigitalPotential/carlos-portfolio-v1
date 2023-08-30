@@ -51,7 +51,7 @@ const Projects = () => {
                 <li>React</li>
                 <li>Typescript</li>
                 <li>Next.js</li>
-                <li>ShadcnUI</li>
+                <li>Shadcn/UI</li>
                 <li>Prisma</li>
                 <li>Clerk</li>
                 <li>Crisp</li>
