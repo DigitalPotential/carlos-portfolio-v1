@@ -10,7 +10,7 @@ const DigitalPotential = () => {
             className="w-full"
         >
             <h3 className="flex text-white gap-1 font-medium text-xl font-unbounded">
-                Web developer
+                Full-stack developer
                 <span className="text-textGreen tracking-wide">
                     @Digital Potential
                 </span>
