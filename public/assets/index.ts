@@ -1,6 +1,5 @@
 import carlos from "./images/carlos.png";
 import logo from "./images/logo.svg";
-import skillsCircle from "./images/skillsCircle.svg";
 import cssLogo from "./images/cssLogo.svg";
 import framerMotionLogo from "./images/framerMotionLogo.svg";
 import javascriptLogo from "./images/javascriptLogo.svg";
@@ -27,7 +26,6 @@ export {
     MUILogo,
     carlos,
     logo,
-    skillsCircle,
     cssLogo,
     framerMotionLogo,
     javascriptLogo,
