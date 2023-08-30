@@ -17,15 +17,17 @@ import nextjsLogo from "./images/nextjsLogo.svg";
 import webLogo from "./images/webLogo.svg";
 import MUILogo from "./images/MUILogo.svg";
 import webflowLogo from "./images/webflowLogo.svg";
-import countriesRestApi from "./images/countriesRestApi.png";
 import spotify from "./images/spotifyDesktopMobile.png";
 import DigitalWeb from "./images/DigitalPotentialWeb.png";
 import Protectionmask from "./images/Protectionmask.png";
 import UVCSafe from "./images/UVCSafe.png";
 import netflixclone from "./images/netflixclone.png";
+import geniusAI from "./images/geniusAI.png";
+import geniusAiSaas from "./images/geniusAiSaas.png";
+import ecommerceDashboard from "./images/ecommerceDashboard.png";
+import ecommerceStore from "./images/ecommerceStore.png";
 
 export {
-    countriesRestApi,
     webflowLogo,
     MUILogo,
     carlos,
@@ -50,4 +52,8 @@ export {
     Protectionmask,
     UVCSafe,
     netflixclone,
+    geniusAI,
+    geniusAiSaas,
+    ecommerceDashboard,
+    ecommerceStore,
 };
