@@ -110,7 +110,7 @@ const Projects = () => {
                 project showcases a modern approach to integrating third-party
                 services into a robust and type-safe frontend application.
               </p>
-              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
                 <li>Typescript</li>
                 <li>Material UI</li>
@@ -221,9 +221,16 @@ const Projects = () => {
 
 The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe simplifies financial transactions. Technologies like React Hook Form, Zustand, and Axios are integral, handling forms, state management, and HTTP requests respectively.`}
               </p>
-              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-                <li>Webflow</li>
-                <li>Live site</li>
+              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Clerk</li>
+                <li>TailwindCSS</li>
+                <li>Shadcn/UI</li>
+                <li>Prisma</li>
+                <li>Stripe</li>
+                <li>Zustand</li>
+                <li>Axios</li>
               </ul>
               <div className="text-white text-2xl flex gap-4">
                 <a
@@ -238,9 +245,9 @@ The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe s
         </div>
 
         {/* project 5 */}
-
+        
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
-          <div className="flex flex-col xl:flex-row gap-6">
+          <div className="flex flex-col xl:flex-row-reverse gap-6">
             <a
               className="w-full xl:w-1/2 h-auto relative group"
               href="https://ecommerce-store-chi-black.vercel.app/"
@@ -254,23 +261,23 @@ The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe s
                 />
               </div>
             </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
               <h3 className="text-xl xs:text-2xl font-bold text-white">
-                E-commerce Frontend Store
+              E-commerce Frontend Store
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">
-                This straightforward e-commerce store, built using React and
+              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
+              This straightforward e-commerce store, built using React and
                 Next.js, provides visitors a simple interface to browse products
                 by category, size, and color. Integrated with Stripe, it ensures
                 a secure and seamless checkout process. The store maintains
                 up-to-date product availability through its real-time connection
                 with the backend, emphasizing core functionality.
               </p>
-              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-                <li>React</li>
+              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
+              <li>React</li>
                 <li>Next.JS</li>
                 <li>TypeScript</li>
                 <li>TailwindCSS</li>
@@ -291,6 +298,7 @@ The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe s
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );
