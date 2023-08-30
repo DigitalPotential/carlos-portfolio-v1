@@ -3,7 +3,6 @@ import SectionTitle from "./SectionTitle";
 import Image from "next/image";
 import {
   spotify,
-  DigitalWeb,
   netflixclone,
   geniusAiSaas,
   ecommerceDashboard,

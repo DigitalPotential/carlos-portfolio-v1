@@ -7,7 +7,6 @@ import {
     expressLogo,
     framerMotionLogo,
     gitLogo,
-    htmLogo,
     javascriptLogo,
     mongodbLogo,
     nextjsLogo,
