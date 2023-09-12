@@ -20,6 +20,7 @@ import geniusAiSaas from "./images/geniusAiSaas.png";
 import ecommerceDashboard from "./images/ecommerceDashboard.png";
 import ecommerceStore from "./images/ecommerceStore.png";
 import PrismaDarkSymbol from "./images/PrismaDarkSymbol.svg";
+import discordClone from "./images/discordClone.png";
 
 export {
     webflowLogo,
@@ -43,5 +44,6 @@ export {
     geniusAiSaas,
     ecommerceDashboard,
     ecommerceStore,
-    PrismaDarkSymbol
+    PrismaDarkSymbol,
+    discordClone,
 };
