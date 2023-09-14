@@ -27,10 +27,10 @@ const Archive = () => {
           link="https://rest-countries-api-xi-topaz.vercel.app/"
         />
         <ArchiveCard
-          title="Digital Potential"
-          des="This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more."
+          title="UVEO"
+          des="This is being built in webflow for a company selling UVC lights:Care222®: Revolutionizing UV light technology for safer indoor environments. Effective against virus and bacteria spread."
           listItem={["Webflow", "Live site"]}
-          link="https://www.digitalpotential.se/"
+          link="https://www.uveo.se/"
         />
         <ArchiveCard
           title="Protectionmask"
@@ -40,16 +40,16 @@ Expertly designed for protection in the event of a fire, our Protectionmask® ab
           link="https://www.protectionmask.com/"
         />
         <ArchiveCard
+          title="Digital Potential"
+          des="This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more."
+          listItem={["Webflow", "Live site"]}
+          link="https://www.digitalpotential.se/"
+        />
+        <ArchiveCard
           title="Password Generator"
           des="This password generator enables secure, customized password creation based on user preferences. They can select length, character types, and receive strength assessment of the generated password."
           listItem={["React", "TailwindCSS", "Vite"]}
           link="https://password-generator-navy.vercel.app/"
-        />
-        <ArchiveCard
-          title="UVCSafe"
-          des="This is being built in webflow for a company selling UVC lights:Care222®: Revolutionizing UV light technology for safer indoor environments. Effective against virus and bacteria spread."
-          listItem={["Webflow", "In Production", "Live site"]}
-          link="https://uvc-safe.webflow.io/"
         />
         
       </div>
