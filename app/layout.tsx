@@ -4,7 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
     title: "Carlos Portfolio",
-    description: "Built with Next.js, Tailwind CSS, and TypeScript."
+    description: "Built with Next.js, TypeScript, Framer Motion, Three.js and Tailwind CSS."
 };
 
 export default function RootLayout({
