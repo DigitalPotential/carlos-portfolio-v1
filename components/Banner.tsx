@@ -44,7 +44,7 @@ const Banner = () => {
                     transition={{ duration: 0.5, delay: 0.7 }}
                     className="text-4xl lgl:text-6xl font-unbounded font-semibold text-white flex flex-col"
                 >
-                    Carlos.{" "}
+                    Sven.{" "}
                     <span className="text-textDark mt-2 lgl:mt-4">
                         I build things for the web.
                     </span>
