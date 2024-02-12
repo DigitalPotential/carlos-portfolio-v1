@@ -50,15 +50,15 @@ const Projects = () => {
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
+                <li>TypeScript</li>
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>MongoDB</li>
                 <li>Shopify API</li>
                 <li>Facebook API</li>
                 <li>OpenAI</li>
-                <li>SEO Tools</li>
-                <li>Tailwind CSS</li>
-                <li>Collaborative Tools</li>
+                <li>Styled Components</li>
+                <li>Adyen Checkout</li>
               </ul>
 
               <div className="text-white text-2xl flex gap-4">
@@ -114,10 +114,9 @@ const Projects = () => {
                 <li>Expo</li>
                 <li>Mapbox</li>
                 <li>React</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
                 <li>Styled Components</li>
                 <li>TailwindCSS</li>
-                <li>JWT for Authentication</li>
                 <li>Couchbase</li>
                 <li>Axios</li>
                 <li>JWT</li>
@@ -164,7 +163,7 @@ const Projects = () => {
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
                 <li>Next.js</li>
                 <li>Shadcn/UI</li>
                 <li>Prisma</li>
@@ -221,7 +220,7 @@ const Projects = () => {
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
                 <li>Next.js</li>
                 <li>Shadcn/UI</li>
                 <li>Prisma</li>
@@ -284,7 +283,7 @@ const Projects = () => {
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
                 <li>Material UI</li>
                 <li>Spotify API</li>
                 <li>Spotify Playback SDK</li>
@@ -336,7 +335,7 @@ const Projects = () => {
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
                 <li>React</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
                 <li>Tailwind CSS</li>
                 <li>MongoDB</li>
                 <li>Prisma</li>
