@@ -6,8 +6,9 @@ import {
   netflixclone,
   geniusAiSaas,
   ecommerceDashboard,
-  ecommerceStore,
   discordClone,
+  brandroidDesktop,
+  pinglooDesktop,
 } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -18,9 +19,123 @@ const Projects = () => {
       id="projects"
       className="max-w-container mx-auto lgl:px-20 pb-24 pt-32 xs:mt-48"
     >
-      <SectionTitle title="Some Things I have Built" titleNo="02" />
+      <SectionTitle title="Technical Contributions & Creations" titleNo="02" />
       <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
-        {/* Project 1 discord clone */}
+        {/* Project 1 Brandroid */}
+
+        <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
+          <div className="flex flex-col xl:flex-row-reverse gap-6">
+            <a
+              className="w-full xl:w-1/2 h-auto relative group"
+              href="https://www.brandroid.ai/"
+              target="_blank"
+            >
+              <div>
+                <Image
+                  className="w-full h-full object-contain rounded-lg"
+                  src={brandroidDesktop}
+                  alt="Brandroid.ai"
+                />
+              </div>
+            </a>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
+              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                Featured Project
+              </p>
+              <h3 className="text-xl xs:text-2xl font-bold text-white">
+                Brandroid.ai
+              </h3>
+              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16 md:p-6 rounded-lg text-white">
+                {`Bridging AI with e-commerce, Brandroid empowers online merchants and dropshippers through seamless integration with Shopify and Facebook Ads. Built on the MERN stack, it offers robust backend support and a responsive React frontend. It provides analytics for optimizing product listings and ad strategies, AI-generated product descriptions, ad content, and email campaigns, simplifying e-commerce management and enabling effective scaling.`}
+              </p>
+              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Shopify API</li>
+                <li>Facebook API</li>
+                <li>OpenAI</li>
+                <li>SEO Tools</li>
+                <li>Tailwind CSS</li>
+                <li>Collaborative Tools</li>
+              </ul>
+
+              <div className="text-white text-2xl flex gap-4">
+                <a
+                  className="hover:text-textGreen duration-300"
+                  href="https://www.brandroid.ai/"
+                >
+                  <RxOpenInNewWindow />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 2 Pingloo */}
+
+        <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
+          <div className="flex flex-col xl:flex-row gap-6">
+            <a
+              className="w-full xl:w-1/2 h-auto relative group"
+              href="https://www.pingloo.com/"
+              target="_blank"
+            >
+              <div>
+                <Image
+                  className="w-full h-full object-contain rounded-lg"
+                  src={pinglooDesktop}
+                  alt="Pingloo"
+                />
+              </div>
+            </a>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
+              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                Featured Project
+              </p>
+              <h3 className="text-xl xs:text-2xl font-bold text-white">
+                Pingloo
+              </h3>
+              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
+                At Pingloo, I play a pivotal role in both mobile and web
+                application development, employing React Native with Expo,
+                Next.js, and integrating Mapbox for advanced mapping
+                functionalities. This project highlights my proficiency in
+                crafting cross-platform solutions that exceed user expectations
+                with modern, cutting-edge tools. My work spans strategic tech
+                stack planning, fostering an agile development environment, and
+                collaborating with experienced project managers to deliver
+                innovative event ticketing services.
+              </p>
+              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
+                <li>React Native</li>
+                <li>Next.js</li>
+                <li>Expo</li>
+                <li>Mapbox</li>
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Styled Components</li>
+                <li>TailwindCSS</li>
+                <li>JWT for Authentication</li>
+                <li>Couchbase</li>
+                <li>Axios</li>
+                <li>JWT</li>
+              </ul>
+
+              <div className="text-white text-2xl flex gap-4">
+                <a
+                  className="hover:text-textGreen duration-300"
+                  href="https://www.pingloo.com/"
+                >
+                  <RxOpenInNewWindow />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 3 discord clone */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
@@ -77,7 +192,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Project 2 ai saas */}
+        {/* Project 4 ai saas */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
@@ -134,7 +249,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Project 3 Spotify clone */}
+        {/* Project 5 Spotify clone */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
@@ -192,7 +307,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Project 4 Netflix clone */}
+        {/* Project 6 Netflix clone */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
@@ -249,7 +364,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* project 5 E-com dashboard */}
+        {/* project 7 E-com dashboard */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
@@ -271,15 +386,15 @@ const Projects = () => {
                 Featured Project
               </p>
               <h3 className="text-xl xs:text-2xl font-bold text-white">
-              Ecommerce Admin Dashboard
+                Ecommerce Admin Dashboard
               </h3>
               <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
-              {`Built with Next.js and TypeScript, this admin dashboard manages the e-commerce store's core functions. Clerk provides secure authentication, while Shadcn/UI offers a clear interface. Prisma oversees the data layer, streamlining tasks from product attribute definition to order monitoring.
+                {`Built with Next.js and TypeScript, this admin dashboard manages the e-commerce store's core functions. Clerk provides secure authentication, while Shadcn/UI offers a clear interface. Prisma oversees the data layer, streamlining tasks from product attribute definition to order monitoring.
 
 The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe simplifies financial transactions. Technologies like React Hook Form, Zustand, and Axios are integral, handling forms, state management, and HTTP requests respectively.`}
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
-              <li>Next.js</li>
+                <li>Next.js</li>
                 <li>TypeScript</li>
                 <li>Clerk</li>
                 <li>TailwindCSS</li>
@@ -300,63 +415,6 @@ The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe s
             </div>
           </div>
         </div>
-
-        {/* project 6 E-com store */}
-
-        <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
-          <div className="flex flex-col xl:flex-row gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://ecommerce-store-chi-black.vercel.app/"
-              target="_blank"
-            >
-              <div>
-                <Image
-                  className="w-full h-full object-contain rounded-lg"
-                  src={ecommerceStore}
-                  alt="E-commerce Store"
-                />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
-                Featured Project
-              </p>
-              <h3 className="text-xl xs:text-2xl font-bold text-white">
-              E-commerce Frontend Store
-              </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">
-              This straightforward e-commerce store, built using React and
-                Next.js, provides visitors a simple interface to browse products
-                by category, size, and color. Integrated with Stripe, it ensures
-                a secure and seamless checkout process. The store maintains
-                up-to-date product availability through its real-time connection
-                with the backend, emphasizing core functionality.
-              </p>
-              <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
-              <li>React</li>
-                <li>Next.JS</li>
-                <li>TypeScript</li>
-                <li>Tailwind CSS</li>
-                <li>Headless UI</li>
-                <li>Axios</li>
-                <li>React Hot Toast</li>
-                <li>Zustand</li>
-                <li>Stripe</li>
-              </ul>
-              <div className="text-white text-2xl flex gap-4">
-                
-                <a
-                  className="hover:text-textGreen duration-300"
-                  href="https://ecommerce-store-chi-black.vercel.app/"
-                >
-                  <RxOpenInNewWindow />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );
