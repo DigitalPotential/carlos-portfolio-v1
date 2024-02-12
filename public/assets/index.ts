@@ -18,32 +18,34 @@ import netflixclone from "./images/netflixclone.png";
 import geniusAI from "./images/geniusAI.png";
 import geniusAiSaas from "./images/geniusAiSaas.png";
 import ecommerceDashboard from "./images/ecommerceDashboard.png";
-import ecommerceStore from "./images/ecommerceStore.png";
 import PrismaDarkSymbol from "./images/PrismaDarkSymbol.svg";
 import discordClone from "./images/discordClone.png";
+import brandroidDesktop from "./images/brandroidDesktop.png";
+import pinglooDesktop from "./images/PinglooDesktop.png";
 
 export {
-    webflowLogo,
-    MUILogo,
-    carlos,
-    logo,
-    cssLogo,
-    framerMotionLogo,
-    javascriptLogo,
-    reactLogo,
-    typescriptLogo,
-    nodejsLogo,
-    expressLogo,
-    mongodbLogo,
-    gitLogo,
-    tailwindcssLogo,
-    nextjsLogo,
-    spotify,
-    netflixclone,
-    geniusAI,
-    geniusAiSaas,
-    ecommerceDashboard,
-    ecommerceStore,
-    PrismaDarkSymbol,
-    discordClone,
+  webflowLogo,
+  MUILogo,
+  carlos,
+  logo,
+  cssLogo,
+  framerMotionLogo,
+  javascriptLogo,
+  reactLogo,
+  typescriptLogo,
+  nodejsLogo,
+  expressLogo,
+  mongodbLogo,
+  gitLogo,
+  tailwindcssLogo,
+  nextjsLogo,
+  spotify,
+  netflixclone,
+  geniusAI,
+  geniusAiSaas,
+  ecommerceDashboard,
+  PrismaDarkSymbol,
+  discordClone,
+  brandroidDesktop,
+  pinglooDesktop,
 };
