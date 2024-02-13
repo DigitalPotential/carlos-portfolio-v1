@@ -21,7 +21,7 @@ import ecommerceDashboard from "./images/ecommerceDashboard.png";
 import PrismaDarkSymbol from "./images/PrismaDarkSymbol.svg";
 import discordClone from "./images/discordClone.png";
 import brandroidDesktop from "./images/brandroidDesktop.png";
-import pinglooDesktop from "./images/PinglooDesktop.png";
+import pinglooDesktop from "./images/pinglooDesktop.png";
 
 export {
   webflowLogo,
