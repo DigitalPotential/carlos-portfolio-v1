@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/movingBorderButton";
+import { MovingButton } from "./ui/movingBorderButton";
 import axios from "axios";
 
 export function SignupForm() {
@@ -50,7 +50,7 @@ export function SignupForm() {
         Ready to get started?
       </h2>
       <p className="text-sm max-w-sm mt-2 text-neutral-300">
-        I hope I have convinced you to get in touch. Please fill out the form
+        Please fill out the form
       </p>
 
       <form className="mt-8" onSubmit={handleSubmit}>
@@ -92,7 +92,7 @@ export function SignupForm() {
             onChange={handleChange}
             value={formData.email}
             id="email"
-            placeholder="Contact@sendemail.com"
+            placeholder="Contact@email.com"
             type="email"
           />
         </LabelInputContainer>
@@ -104,19 +104,20 @@ export function SignupForm() {
             id="message"
             placeholder="We would love for you to work with us!"
             type="text"
+            className="resize-x"
           />
         </LabelInputContainer>
 
         <div className="flex flex-col items-center justify-center pt-5">
-          <Button
+          <MovingButton
             borderRadius="0.5rem"
-            className="bg-bodyColor text-white border-slate-600"
+            className="bg-bodyColor text-white border-slate-600 px-4"
             type="submit"
           >
             Send Message! &rarr;
-          </Button>
+          </MovingButton>
           <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-6 h-[1px] w-full" />
-          <button className="flex h-12 w-48 items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#0A192F,45%,#1e2631,55%,#0A192F)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors animate-shimmer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-bodyColor">
+          <button className="flex h-12 w-48 items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#163A40,45%,#64FFDA,55%,#163A40)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors animate-shimmer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-bodyColor">
             Contact by email
           </button>
         </div>
@@ -124,6 +125,7 @@ export function SignupForm() {
     </div>
   );
 }
+// [linear-gradient(110deg,#163A40 0%,#64FFDA 50%,#163A40 100%)]
 
 const BottomGradient = () => {
   return (
