@@ -1,5 +1,5 @@
 import React from "react";
-import ArchiveCard from "./ArchiveCard";
+import { ArchiveCardsWithHover } from "./ArchiveCardsWithHover";
 
 const Archive = () => {
   return (
@@ -12,47 +12,7 @@ const Archive = () => {
           View the archive
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
-        <ArchiveCard
-          title="Countries REST API"
-          des="This web app offers country data via the REST Countries API, allowing users to search and filter details. It features a responsive design with light/dark modes, built using React."
-          listItem={[
-            "React",
-            "Typescript",
-            "Tailwind CSS",
-            "Countries API",
-            "Vite",
-            "Framer Motion",
-          ]}
-          link="https://rest-countries-api-xi-topaz.vercel.app/"
-        />
-        <ArchiveCard
-          title="UVEO"
-          des="This is being built in webflow for a company selling UVC lights:Care222®: Revolutionizing UV light technology for safer indoor environments. Effective against virus and bacteria spread."
-          listItem={["Webflow", "Live site"]}
-          link="https://www.uveo.se/"
-        />
-        <ArchiveCard
-          title="Protectionmask"
-          des="Protectionmask is a company selling a Innovative Escape Mask
-Expertly designed for protection in the event of a fire, our Protectionmask® absorbs up to 95% of the most dangerous fire gases and particulates."
-          listItem={["Webflow", "Live site"]}
-          link="https://www.protectionmask.com/"
-        />
-        <ArchiveCard
-          title="Digital Potential"
-          des="This website was built for my agency with Webflow, on this site you can see all the services we offer and the work we have done. For this site I used webflows native animations and interactions to create a smooth user experience aswell as custom code to style the scrollbar, add lottie animations and more."
-          listItem={["Webflow", "Live site"]}
-          link="https://www.digitalpotential.se/"
-        />
-        <ArchiveCard
-          title="Password Generator"
-          des="This password generator enables secure, customized password creation based on user preferences. They can select length, character types, and receive strength assessment of the generated password."
-          listItem={["React", "TailwindCSS", "Vite"]}
-          link="https://password-generator-navy.vercel.app/"
-        />
-        
-      </div>
+      <ArchiveCardsWithHover />
     </div>
   );
 };
