@@ -12,6 +12,7 @@ import {
 } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { PinContainer } from "./ui/3d-pin";
 
 const Projects = () => {
   return (
@@ -20,26 +21,27 @@ const Projects = () => {
       className="max-w-container mx-auto lgl:px-20 pb-24 pt-32 xs:mt-48"
     >
       <SectionTitle title="Technical Contributions & Creations" titleNo="02" />
-      <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
+      <div className="w-full flex flex-col items-center justify-between xs:gap-28 gap-20 xs:mt-10">
         {/* Project 1 Brandroid */}
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://www.brandroid.ai/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/Brandroid.ai"
+                href="https://www.brandroid.ai/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={brandroidDesktop}
                   alt="Brandroid.ai"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+              </PinContainer>
+            </div>
+
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-[100]">
+              <p className="font-titleFont text-textGreen text-sm tracking-wide xl:pt-0 pt-6 mdl:pt-16 lgl:pt-24">
                 Featured Project
               </p>
               <h3 className="text-xl xs:text-2xl font-bold text-white">
@@ -77,20 +79,20 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://www.pingloo.com/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/Pingloo.com"
+                href="https://www.pingloo.com/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={pinglooDesktop}
                   alt="Pingloo"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
+              </PinContainer>
+            </div>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
@@ -138,20 +140,21 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://discord-clone-production-b518.up.railway.app/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/Discord Clone"
+                href="https://discord-clone-production-b518.up.railway.app/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
-                  className="w-full h-full object-contain rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                   src={discordClone}
                   alt="Discord Clone"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
+              </PinContainer>
+            </div>
+
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
@@ -195,20 +198,20 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://ai-by-genius.vercel.app/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/AI SaaS"
+                href="https://ai-by-genius.vercel.app/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={geniusAiSaas}
                   alt="Genius AI SaaS"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
+              </PinContainer>
+            </div>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
@@ -252,20 +255,20 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://spotify-clone-react-typescript-api.vercel.app/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/Spotify Clone"
+                href="https://spotify-clone-react-typescript-api.vercel.app/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={spotify}
                   alt="Spotify Clone"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
+              </PinContainer>
+            </div>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
@@ -310,20 +313,20 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://fakeflix-web-app.vercel.app/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/Netflix Clone"
+                href="https://fakeflix-web-app.vercel.app/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={netflixclone}
                   alt="Netflix Clone"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-10">
+              </PinContainer>
+            </div>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xs:items-end xs:text-right z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
@@ -367,20 +370,20 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://ecommerce-admin-six-delta.vercel.app/"
-              target="_blank"
-            >
-              <div>
+            <div className="w-full xl:w-1/2 relative group">
+              <PinContainer
+                title="/E-commerce Admin Dashboard"
+                href="https://ecommerce-admin-six-delta.vercel.app/"
+                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+              >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
                   src={ecommerceDashboard}
                   alt="E-commerce Admin Dashboard"
                 />
-              </div>
-            </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
+              </PinContainer>
+            </div>
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
