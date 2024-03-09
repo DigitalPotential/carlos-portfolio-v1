@@ -30,7 +30,10 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
-  const [formSubmitted, setFormSubmitted] = useState(false);
+  // const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [exitCompleted, setExitCompleted] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -51,28 +54,61 @@ export function ContactForm() {
     `;
 
     try {
+      setIsSubmitting(true);
       const response = await axios.post("/api/send-email", {
         from: `${values.firstname} ${values.lastname} <onboarding@resend.dev>`, // Adjust as needed
         to: "carlos@digitalpotential.se",
         subject: "Portfolio Contact Form Submission",
         html: emailBody,
       });
-      setFormSubmitted(true);
+      setShowSuccessMessage(true);
+      setIsSubmitting(false);
       console.log(response.data);
       // Handle success, e.g., show a success message
     } catch (error) {
       console.error("Error:", error);
+      setIsSubmitting(false);
       // Handle error, e.g., show an error message
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const formVariants = {
+    hidden: { opacity: 0, transition: { duration: 1 } },
+    visible: { opacity: 1, transition: { duration: 1.5 } },
+    exit: {
+      opacity: 0,
+      y: 1000,
+      transition: { duration: 1.5, ease: "easeInOut" },
+    },
+  };
+
+  const successMessageVariants = {
+    hidden: { opacity: 0, y: 200, transition: { duration: 1 }, delay: 1 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: "easeInOut" },
+    },
+  };
+  const handleExitComplete = () => {
+    if (showSuccessMessage) {
+      setExitCompleted(true); // Update state once exit animation is complete
     }
   };
 
   return (
-    <AnimatePresence>
-      {!formSubmitted ? (
+    <AnimatePresence onExitComplete={handleExitComplete}>
+      {!showSuccessMessage && (
         <motion.div
-          initial={{ y: 0 }}
-          exit={{ y: "100%" }}
-          transition={{ type: "spring", stiffness: 100 }}
+          key="form"
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={formVariants}
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="form-class"
         >
           <Form {...form}>
             <div className="max-w-[500px] w-full h-[75vh] xs:h-[60vh] xl:h-[70vh] mx-auto rounded-none md:rounded-2xl px-4 pt-4 pb-0 md:p-8 bg-bodyColor">
@@ -188,7 +224,7 @@ export function ContactForm() {
                     className="bg-bodyColor text-white border-slate-600 px-4"
                     type="submit"
                   >
-                    Send Message! &rarr;
+                    {isSubmitting ? "Submitting..." : "Send Message! →"}
                   </MovingButton>
                   <div className="hidden xl:flex bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-3 h-[1px] w-full" />
                   <button className="flex h-10 w-42 xl:w-44 items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#163A40,45%,#64FFDA,55%,#163A40)] bg-[length:200%_100%] px-3 font-medium text-white transition-colors animate-shimmer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-bodyColor">
@@ -199,11 +235,19 @@ export function ContactForm() {
             </div>
           </Form>
         </motion.div>
-      ) : (
-        <>
-          <SuccessMessage />
-          <BackgroundBeams />
-        </>
+      )}
+      {exitCompleted && (
+        <motion.div
+          key="successMessage"
+          initial="hidden"
+          animate="visible"
+          variants={successMessageVariants}
+        >
+          <>
+            <SuccessMessage />
+            <BackgroundBeams />
+          </>
+        </motion.div>
       )}
     </AnimatePresence>
   );
@@ -225,10 +269,10 @@ const LabelInputContainer = ({
 
 const SuccessMessage = () => (
   <motion.div
-    initial={{ y: "100%" }}
-    animate={{ y: 0 }}
-    exit={{ y: "100%" }}
-    transition={{ type: "spring", stiffness: 100 }}
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: 50 }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}
   >
     <div className="h-[40rem] w-full rounded-md relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4">
@@ -236,7 +280,7 @@ const SuccessMessage = () => (
           Thank you for reaching out!
         </h1>
         <p></p>
-        <p className="text-neutral-500 max-w-[290px] xs:max-w-[650px] mx-auto my-2 text-sm text-center relative z-10">
+        <p className="text-textDark max-w-[290px] xs:max-w-[650px] mx-auto my-2 text-sm text-center relative z-10">
           Your decision to consider my services is one I take seriously.
           I&apos;m committed to delivering excellence and innovation in every
           project. You can rest assured that my performance as a developer will
