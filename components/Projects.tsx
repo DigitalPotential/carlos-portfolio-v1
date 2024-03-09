@@ -31,9 +31,9 @@ const Projects = () => {
                 title="/Brandroid.ai"
                 href="https://www.brandroid.ai/"
               >
-                <div className="flex flex-col tracking-tight text-slate-100/50 w-[45rem] h-[25rem] ">
+                <div className="flex flex-col basis-full w-[40rem] h-[25rem] ">
                   <Image
-                    className="w-full h-full object-contain rounded-lg"
+                    className="w-full h-full object-cover rounded-lg"
                     src={brandroidDesktop}
                     alt="Brandroid.ai"
                   />
@@ -41,7 +41,7 @@ const Projects = () => {
               </PinContainer>
             </div>
 
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
+            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-[100]">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project
               </p>
