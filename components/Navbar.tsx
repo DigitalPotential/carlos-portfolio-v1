@@ -36,7 +36,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full min-h-[10vh] h-28 sticky top-2 xs:top-4 z-50 py-2 xs:py-4 px-4 xs:px-8">
+    <div className="w-full min-h-[10vh] h-28 sticky top-2 xs:top-4 z-[200] py-2 xs:py-4 px-4 xs:px-8">
       <div className="max-w-container h-20 font-unbounded mx-auto p-7 flex bg-[rgba(9,24,46,0.7)] backdrop-filter backdrop-blur-sm justify-between items-center rounded-lg">
         <motion.div
           initial={{ opacity: 0 }}
