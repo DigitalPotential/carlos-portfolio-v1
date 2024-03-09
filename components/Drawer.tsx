@@ -7,8 +7,9 @@ import {
   DrawerFooter,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { SignupForm } from "./SignUpForm";
 import { MovingButton } from "./ui/movingBorderButton";
+import { ContactForm } from "./ContactForm";
+import { MdOutlineClose } from "react-icons/md";
 
 export function DrawerWithForm() {
   return (
@@ -24,15 +25,15 @@ export function DrawerWithForm() {
       </DrawerTrigger>
       <DrawerContent>
         <div>
-          <SignupForm />
+          <ContactForm />
           <DrawerFooter>
             <DrawerClose asChild>
-              <div className="w-52">
+              <div className="flex xs:justify-start justify-center">
                 <MovingButton
                   borderRadius="0.5rem"
-                  className="bg-bodyColor px-4 text-white border-slate-600"
+                  className="bg-bodyColor px-1 text-white border-slate-600 mt-0"
                 >
-                  Close
+                  <MdOutlineClose className="text-3xl text-textGreen cursor-pointer hover:text-red-500" />
                 </MovingButton>
               </div>
             </DrawerClose>
