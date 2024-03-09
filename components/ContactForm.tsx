@@ -116,7 +116,7 @@ export function ContactForm() {
                 Ready to get started?
               </h2>
               <p className="text-sm max-w-sm mt-2 text-neutral-300">
-                Please fill out the form
+                Please fill out the form to see a beautiful success message.
               </p>
               <form className="mt-8" onSubmit={form.handleSubmit(onSubmit)}>
                 <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4 justify-between">
