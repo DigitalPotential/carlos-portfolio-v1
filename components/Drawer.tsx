@@ -23,7 +23,7 @@ export function DrawerWithForm() {
         </MovingButton>
       </DrawerTrigger>
       <DrawerContent>
-        <div className="">
+        <div>
           <SignupForm />
           <DrawerFooter>
             <DrawerClose asChild>
