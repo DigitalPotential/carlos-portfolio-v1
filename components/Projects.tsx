@@ -12,6 +12,7 @@ import {
 } from "@/public/assets";
 import { TbBrandGithub } from "react-icons/tb";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { PinContainer } from "./ui/3d-pin";
 
 const Projects = () => {
   return (
@@ -25,19 +26,21 @@ const Projects = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
-            <a
-              className="w-full xl:w-1/2 h-auto relative group"
-              href="https://www.brandroid.ai/"
-              target="_blank"
-            >
-              <div>
-                <Image
-                  className="w-full h-full object-contain rounded-lg"
-                  src={brandroidDesktop}
-                  alt="Brandroid.ai"
-                />
-              </div>
-            </a>
+            <div className="w-full xl:w-1/2 h-auto relative group">
+              <PinContainer
+                title="/Brandroid.ai"
+                href="https://www.brandroid.ai/"
+              >
+                <div className="flex flex-col tracking-tight text-slate-100/50 w-[45rem] h-[25rem] ">
+                  <Image
+                    className="w-full h-full object-contain rounded-lg"
+                    src={brandroidDesktop}
+                    alt="Brandroid.ai"
+                  />
+                </div>
+              </PinContainer>
+            </div>
+
             <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between xl:items-start text-left z-10">
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Project

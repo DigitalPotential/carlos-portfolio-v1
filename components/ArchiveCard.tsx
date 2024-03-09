@@ -6,13 +6,13 @@ interface Props {
   title: string;
   des: string;
   listItem: string[];
-  link: string;
+  link?: string;
 }
 
 const ArchiveCard = ({ title, des, listItem, link }: Props) => {
   return (
     <>
-      <a href={link} target="_blank" className="relative z-20">
+      <div className="relative z-20">
         <div className="w-full min-h-[390px] rounded-2xl bg-[#112240] p-7 flex flex-col justify-center gap-6">
           <div className="flex justify-between items-center z-50 relative">
             <FaRegFolder className="text-4xl text-textGreen" />
@@ -30,7 +30,7 @@ const ArchiveCard = ({ title, des, listItem, link }: Props) => {
             ))}
           </ul>
         </div>
-      </a>
+      </div>
     </>
   );
 };

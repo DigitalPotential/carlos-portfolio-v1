@@ -2,7 +2,7 @@ import { HoverEffectWithArchiveCard } from "./HoverArchiveCards";
 
 export function ArchiveCardsWithHover() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto mdl:px-8">
       <HoverEffectWithArchiveCard items={projects} />
     </div>
   );
