@@ -7,7 +7,7 @@ const Pingloo = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.1 }}
-      className="w-full"
+      className="p-2 xs:p-6 mx-auto w-full"
     >
       <h3 className="flex text-white gap-1 font-medium text-xl font-unbounded">
         Founder & Full-stack developer

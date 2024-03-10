@@ -47,7 +47,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Brandroid.ai
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16 md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-mr-16 md:p-6 rounded-lg text-white">
                 {`Bridging AI with e-commerce, Brandroid empowers online merchants and dropshippers through seamless integration with Shopify and Facebook Ads. Built on the MERN stack, it offers robust backend support and a responsive React frontend. It provides analytics for optimizing product listings and ad strategies, AI-generated product descriptions, ad content, and email campaigns, simplifying e-commerce management and enabling effective scaling.`}
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
@@ -99,7 +99,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Pingloo
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">
                 At Pingloo, I play a pivotal role in both mobile and web
                 application development, employing React Native with Expo,
                 Next.js, and integrating Mapbox for advanced mapping
@@ -161,7 +161,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Discord Clone
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-mr-16  md:p-6 rounded-lg text-white">
                 {`A real-time Discord clone built using Next.js, TypeScript, TailwindCSS, and Prisma, featuring real-time messaging & video calls via Socket.io, dynamic channels (text, audio, video), member & server management tools, infinite message loading, an intuitive UI with light/dark modes, a MySQL backend with Prisma ORM, and secure authentication through Clerk.`}
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
@@ -218,7 +218,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Genius AI SaaS
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-ml-16 md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-ml-16 md:p-6 rounded-lg text-white">
                 {`AI-SaaS: Powered by Open AI and Replicate AI APIs, this app generates varied content – Code, Conversation, Image, Video, and Music. Full-stack with Next.js, React, TailwindCSS, Shadcn/UI, and Prisma. Clerk handles authentication, Axios and Crisp manage communication. PRO version via Stripe. TypeScript, Zod, Zustand showcase my skills.`}
               </p>
               <ul className="text-xs md:text-sm font-unbounded tracking-wide flex flex-wrap gap-2 md:gap-5 justify-between text-textDark">
@@ -275,7 +275,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Spotify Clone
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-mr-16  md:p-6 rounded-lg text-white">
                 The Spotify Clone is a web application that mimics key
                 functionalities of Spotify. Built with React.js, TypeScript, and
                 styled-components, it allows users to interact with their
@@ -390,7 +390,7 @@ const Projects = () => {
               <h3 className="text-xl xs:text-2xl font-bold text-white">
                 Ecommerce Admin Dashboard
               </h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 xl:-mr-16  md:p-6 rounded-lg text-white">
+              <p className="bg-[#112240] text-sm md:text-base p-4 xl:-mr-16  md:p-6 rounded-lg text-white">
                 {`Built with Next.js and TypeScript, this admin dashboard manages the e-commerce store's core functions. Clerk provides secure authentication, while Shadcn/UI offers a clear interface. Prisma oversees the data layer, streamlining tasks from product attribute definition to order monitoring.
 
 The backend prioritizes TypeScript's robustness, enhancing type safety. Stripe simplifies financial transactions. Technologies like React Hook Form, Zustand, and Axios are integral, handling forms, state management, and HTTP requests respectively.`}

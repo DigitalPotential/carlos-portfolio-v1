@@ -15,6 +15,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 import Archive from "@/components/Archive";
+import { ExperienceTabs } from "@/components/ExperienceTabs";
 
 export default function Home() {
   return (
@@ -66,7 +67,7 @@ export default function Home() {
             <Skills />
             <Projects />
             <Archive />
-            <Experience />
+            <ExperienceTabs />
             <Contact />
           </div>
           <motion.div
