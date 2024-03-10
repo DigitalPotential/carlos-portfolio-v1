@@ -1,13 +1,12 @@
-"use client";
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { useMotionTemplate, useMotionValue, motion } from "framer-motion";
 
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ className, type, ...props }, ref) => {
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
+  ({ className, ...props }, ref) => {
     const radius = 100;
     const [visible, setVisible] = React.useState(false);
 
@@ -20,6 +19,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
       mouseX.set(clientX - left);
       mouseY.set(clientY - top);
     }
+
     return (
       <>
         <motion.div
@@ -35,18 +35,16 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           onMouseMove={handleMouseMove}
           onMouseEnter={() => setVisible(true)}
           onMouseLeave={() => setVisible(false)}
-          className="p-[2px] rounded-lg transition duration-300 group/input"
+          className="p-[2px] rounded-lg transition duration-300 group/textarea"
         >
-          <input
-            type={type}
+          <textarea
             className={cn(
-              `flex h-10 w-full border-none bg-[#133040] text-textGreen rounded-md px-3 py-2 text-sm  file:border-0 file:bg-transparent 
-          file:text-sm file:font-medium placeholder-text-neutral-600 
-          focus-visible:outline-none focus-visible:ring-[2px]  focus-visible:ring-neutral-600
-           disabled:cursor-not-allowed disabled:opacity-50
-           dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
-           group-hover/input:shadow-none transition duration-400
-           `,
+              `flex w-full resize-none border-none bg-[#133040] text-textGreen rounded-md px-3 py-2 text-sm placeholder-text-neutral-600 
+          focus-visible:outline-none focus-visible:ring-[2px] focus-visible:ring-neutral-600
+          disabled:cursor-not-allowed disabled:opacity-50
+          dark:shadow-[0px_0px_1px_1px_var(--neutral-700)]
+          group-hover/textarea:shadow-none transition duration-400
+          `,
               className
             )}
             ref={ref}
@@ -57,6 +55,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     );
   }
 );
-Input.displayName = "Input";
+Textarea.displayName = "Textarea";
 
-export { Input };
+export { Textarea };

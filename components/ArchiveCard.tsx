@@ -1,6 +1,7 @@
 import React from "react";
 import { RxOpenInNewWindow } from "react-icons/rx";
 import { FaRegFolder } from "react-icons/fa";
+import { Meteors } from "./ui/meteors";
 
 interface Props {
   title: string;
@@ -12,7 +13,8 @@ interface Props {
 const ArchiveCard = ({ title, des, listItem, link }: Props) => {
   return (
     <>
-      <div className="relative z-20">
+      <div className="relative z-20 overflow-hidden">
+        <Meteors className="z-[100]" number={20} />
         <div className="w-full min-h-[390px] rounded-2xl bg-[#112240] p-7 flex flex-col justify-center gap-6">
           <div className="flex justify-between items-center z-50 relative">
             <FaRegFolder className="text-4xl text-textGreen" />
