@@ -57,14 +57,8 @@ export function ExperienceTabs() {
   ];
 
   return (
-    <div className="h-[65rem] [perspective:1000px] md:h-[20rem] relative b flex flex-col w-full mx-auto items-center justify-center">
-      <Tabs
-        tabs={tabs}
-        containerClassName="tabs-container"
-        activeTabClassName="active-tab"
-        tabClassName="tab"
-        contentClassName="tab-content"
-      />
+    <div className="h-[10rem] [perspective:1000px] md:h-[10rem] relative b flex flex-col w-full mx-auto items-center justify-center">
+      <Tabs tabs={tabs} />
     </div>
   );
 }
