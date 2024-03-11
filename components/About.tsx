@@ -15,16 +15,26 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-            I am a self-taught developer with a passion for learning and a love
-            for programming. I have a background in sales and customer service,
-            which has given me a unique perspective on how to build{" "}
-            <span className="text-textGreen">user-friendly applications.</span>
+            <span className="text-textGreen">
+              Welcome to my corner of the internet.{" "}
+            </span>
+            {`I'm Carlos, a passionate web developer and entrepreneur driven by
+            the challenge of transforming ideas into reality through digital
+            solutions. My technical journey navigates through the intricacies of
+            the MERN stack, including React, React Native, TypeScript,
+            JavaScript, and beyond. At the helm of Digital Potential, I lead
+            projects that span across Webflow, WordPress, Shopify, and Wix,
+            showcasing the versatility and depth of my development skills.`}
           </p>
           <p>
-            I am currently working as a freelance developer, building websites
-            and applications for small businesses and startups. I am also
-            working on my own projects,{" "}
-            <span className="text-textGreen">which I hope to launch soon.</span>
+            My experience at Brandroid exemplifies my commitment to enhancing
+            app functionality and seamless integration with external services.
+            Moreover, my roles as a teacher at Nackademin and co-founder of
+            Pingloo underscore my dedication to knowledge sharing and
+            innovation. Always on the lookout for cutting-edge technologies,{" "}
+            <span className="text-textGreen">
+              I aim to optimize user experiences and web solutions.
+            </span>
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
           <ul className="max-w[450px] text-sm font-unbounded grid xs:grid-cols-3 grid-cols-2 gap-2 mt-6 flex-wrap">
@@ -56,19 +66,19 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Clerk
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
-                <AiFillThunderbolt />
-              </span>
-              MongoDB
+              React Native
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
               Prisma
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="text-textGreen">
+                <AiFillThunderbolt />
+              </span>
+              MongoDB
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -86,7 +96,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Axios
+              GraphQL
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -98,7 +108,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              MUI
+              Expo
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
@@ -110,7 +120,7 @@ const About = () => {
               <span className="text-textGreen">
                 <AiFillThunderbolt />
               </span>
-              Headless UI
+              Styled Components
             </li>
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
