@@ -78,7 +78,7 @@ export const AnimatedTooltip = ({
                   x: "50%", // Center tooltip horizontally
                 }}
               >
-                <div className="text-base font-bold text-white">
+                <div className="text-base font-bold text-textGreen">
                   {item.name}
                 </div>
                 <div className="text-white text-center">{item.designation}</div>
