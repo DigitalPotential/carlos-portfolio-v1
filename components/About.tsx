@@ -120,7 +120,7 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
+        <div className="w-full lgl:w-1/3 h-96 relative group">
           <div className="absolute w-full h-80 xs:-left-6 xs:-top-6 rounded-lg">
             <div className="w-full h-full relative z-20 flex justify-center xs:pl-6 lgl:pl-0">
               <DirectionAwareHover imageUrl={imageUrl}>
