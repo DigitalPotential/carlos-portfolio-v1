@@ -228,7 +228,9 @@ export function ContactForm() {
                   </MovingButton>
                   <div className="hidden xl:flex bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-3 h-[1px] w-full" />
                   <button className="flex h-10 w-42 xl:w-44 items-center justify-center rounded-md border border-slate-600 bg-[linear-gradient(110deg,#163A40,45%,#64FFDA,55%,#163A40)] bg-[length:200%_100%] px-3 font-medium text-white transition-colors animate-shimmer focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-bodyColor">
-                    Contact by email
+                    <a href="mailto:carlos@digitalpotential.se">
+                      Contact by email
+                    </a>
                   </button>
                 </div>
               </form>
