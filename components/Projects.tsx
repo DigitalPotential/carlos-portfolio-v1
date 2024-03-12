@@ -30,7 +30,7 @@ const Projects = () => {
               <PinContainer
                 title="/Brandroid.ai"
                 href="https://www.brandroid.ai/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
@@ -83,7 +83,7 @@ const Projects = () => {
               <PinContainer
                 title="/Pingloo.com"
                 href="https://www.pingloo.com/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xs:p-0 xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
@@ -144,7 +144,7 @@ const Projects = () => {
               <PinContainer
                 title="/Discord Clone"
                 href="https://discord-clone-production-b518.up.railway.app/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-cover rounded-lg"
@@ -202,7 +202,7 @@ const Projects = () => {
               <PinContainer
                 title="/AI SaaS"
                 href="https://ai-by-genius.vercel.app/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
@@ -259,7 +259,7 @@ const Projects = () => {
               <PinContainer
                 title="/Spotify Clone"
                 href="https://spotify-clone-react-typescript-api.vercel.app/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
@@ -317,7 +317,7 @@ const Projects = () => {
               <PinContainer
                 title="/Netflix Clone"
                 href="https://fakeflix-web-app.vercel.app/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"
@@ -374,7 +374,7 @@ const Projects = () => {
               <PinContainer
                 title="/E-commerce Admin Dashboard"
                 href="https://ecommerce-admin-six-delta.vercel.app/"
-                className="flex flex-col basis-full xl:mt-5 xl:w-[37rem] w-[22rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
+                className="flex flex-col basis-full xl:mt-5 w-[20rem] xl:w-[37rem] xs:w-[26rem] sm:w-[35rem] mdl:w-[44rem] lgl:w-[50rem] h-full"
               >
                 <Image
                   className="w-full h-full object-contain rounded-lg"

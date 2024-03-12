@@ -54,7 +54,7 @@ export const FollowPointer = ({ x, y }: { x: any; y: any }) => {
         cursor: "none",
       }}
       initial={{
-        scale: 1,
+        scale: 0,
         opacity: 1,
       }}
       animate={{
