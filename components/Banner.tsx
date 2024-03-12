@@ -6,6 +6,7 @@ import Link from "next/link";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/techLottie.json";
 import Button3D from "./3DButton/Button3D";
+import { FollowerPointerContainer } from "./ui/FollowerPointerContainer";
 
 const Banner = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -75,11 +76,8 @@ const Banner = () => {
           </Link>
         </motion.div>
       </div>
-      <div className="flex items-start justify-center xs:py-0 mdl:py-24">
-        <Lottie
-          className="w-[400px] lgl:w-[450px]"
-          animationData={animationData}
-        />
+      <div className="relative flex items-start justify-center xs:py-0 mdl:py-24">
+        <FollowerPointerContainer />
       </div>
     </div>
   );

@@ -57,7 +57,10 @@ export function ExperienceTabs() {
   ];
 
   return (
-    <div className="h-[10rem] [perspective:1000px] md:h-[10rem] relative b flex flex-col w-full mx-auto items-center justify-center">
+    <div
+      id="experience"
+      className="h-[10rem] pt-[10rem] [perspective:1000px] relative flex flex-col w-full mx-auto items-center justify-center"
+    >
       <Tabs tabs={tabs} />
     </div>
   );

@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="max-w-contentContainer mx-auto py-10 pt-[60rem] sm:pt-[40rem] md:pt-[44rem] mdl:pt-[35rem] xl:pb-32 flex flex-col gap-4 items-center justify-center"
+      className="max-w-contentContainer mx-auto py-10 pt-[60rem] sm:pt-[40rem] md:pt-[44rem] mdl:pt-[45rem] xl:pb-32 flex flex-col gap-4 items-center justify-center"
     >
       <p className="font-unbounded text-lg text-textGreen font-semibold flex items-center tracking-wide">
         {`04. What's Next?`}
