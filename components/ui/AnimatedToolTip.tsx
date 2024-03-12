@@ -71,7 +71,7 @@ export const AnimatedTooltip = ({
                   },
                 }}
                 exit={{ opacity: 0, y: 20, scale: 0.6 }}
-                className="absolute z-50 px-4 py-2 text-xs bg-[#212E4F] rounded-md shadow-xl -top-16 -left-1/2 flex flex-col items-center justify-center"
+                className="absolute w-32 z-50 px-2 py-2 text-xs bg-[#212E4F] rounded-md shadow-xl -top-16 -left-1/2 flex flex-col items-center justify-center"
                 style={{
                   translateX: translateX,
                   rotate: rotate,

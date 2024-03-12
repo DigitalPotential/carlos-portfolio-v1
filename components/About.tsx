@@ -134,7 +134,7 @@ const About = () => {
           <div className="absolute w-full h-80 xs:-left-6 xs:-top-6 rounded-lg">
             <div className="w-full h-full relative z-20 flex justify-center xs:pl-6 lgl:pl-0">
               <DirectionAwareHover imageUrl={imageUrl}>
-                Old image
+                Passionate individual
               </DirectionAwareHover>
             </div>
           </div>
